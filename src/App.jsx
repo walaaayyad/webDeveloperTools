@@ -10,7 +10,7 @@ function App() {
         <Container fluid className='ms-5'>
           <Navbar.Brand href="#">
             <img
-              src="public/images/logo.png"
+              src="./images/logo.png"
               width="200"
               height="70"
               className="d-inline-block align-top"
@@ -27,7 +27,7 @@ function App() {
               <Row>
                 <Col className='col-12 d-flex justify-content-center align-items-center flex-column'>
                 <h1 className='text-center mb-5'>Web Developer <br /> Tools</h1>
-                <Image src='public/images/person2.png' className='hero-img' width={400} />
+                <Image src='./images/person2.png' className='hero-img' width={400} />
                 </Col>
                 <Col className='col-12 mt-5'>
                   <div className="btns-box text-center">
