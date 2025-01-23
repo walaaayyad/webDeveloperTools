@@ -1,0 +1,28 @@
+/*====================
+      1- General
+======================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+:root {
+  --primary-color-dark: #070b28;
+  --blue-color: rgba(54, 227, 239, 0.5);
+  --light-color: #fff
+}
+html {
+  font-family: "Roboto", sans-serif;
+  /* max-width: 1400px; */
+  margin: auto;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #070b28;
+ 
+  color: var(--light-color);
+  min-height: 100vh;
+}
+body.menuOpen {
+  overflow: hidden;
+}
