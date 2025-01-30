@@ -2,10 +2,10 @@ import React from "react";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
-import NavBar from "./components/navBar";
-import Hero from "./components/heroSection";
-import ButtonsBox from "./components/buttonsBox";
-import ToolsBox from "./components/toolsBox";
+import NavBar from "./components/1-navBar";
+import Hero from "./components/2-heroSection";
+import ButtonsBox from "./components/3-buttonsBox";
+import ToolsBox from "./components/4-previewBox";
 
 function App() {
   return (
