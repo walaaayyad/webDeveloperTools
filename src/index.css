@@ -52,6 +52,10 @@ h1 {
   --bs-btn-disabled-color: #457f80 !important;
   --bs-btn-disabled-border-color: #457f80 !important;
 }
+/* Buttons Box */
+.btns-box button {
+  margin: 5px;
+}
 /* Carousel */
 .carousel-caption {
   position: unset !important;
