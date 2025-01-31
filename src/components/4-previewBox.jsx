@@ -1,46 +1,12 @@
 import { useState } from "react";
 import { useButtonContext } from "../ButtonContext"; // Import the custom hook to access the context
+import data from "../data.json";
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Image, Col } from "react-bootstrap";
 
 function ToolsBox() {
   const { selectedCategory } = useButtonContext(); // Access shared state
   const [index, setIndex] = useState(0); // State to manage the carousel index
-
-  const data = [
-    {
-      id: 1,
-      category: "inspire",
-      title: "pinterest",
-      webImg: "./websiteImages/pinterest.png",
-      webLogo: "./logoImages/websiteIcon/pinterest_logo.png",
-      desc: "Discover recipes, home ideas, style inspiration and other ideas to try.",
-    },
-    {
-      id: 2,
-      category: "inspire",
-      title: "pinterest2",
-      webImg: "./websiteImages/pinterest.png",
-      webLogo: "./logoImages/websiteIcon/pinterest_logo.png",
-      desc: "Discover recipes, home ideas, style inspiration and other ideas to try.",
-    },
-    {
-      id: 3,
-      category: "icon",
-      title: "pinterest--icon",
-      webImg: "./websiteImages/pinterest.png",
-      webLogo: "./logoImages/websiteIcon/pinterest_logo.png",
-      desc: "Discover recipes, home ideas, style inspiration and other ideas to try.",
-    },
-    {
-      id: 4,
-      category: "icon",
-      title: "pinterest--icon2",
-      webImg: "./websiteImages/pinterest.png",
-      webLogo: "./logoImages/websiteIcon/pinterest_logo.png",
-      desc: "Discover recipes, home ideas, style inspiration and other ideas to try.",
-    },
-  ];
 
   // Handle carousel item select
   const handleSelect = (selectedIndex) => {

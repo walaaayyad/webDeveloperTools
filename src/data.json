@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "category": "inspire",
+    "title": "pinterest",
+    "webImg": "./websiteImages/pinterest.png",
+    "webLogo": "./logoImages/websiteIcon/pinterest_logo.png",
+    "desc": "Discover recipes, home ideas, style inspiration and other ideas to try."
+  },
+  {
+    "id": 2,
+    "category": "inspire",
+    "title": "pinterest2",
+    "webImg": "./websiteImages/pinterest.png",
+    "webLogo": "./logoImages/websiteIcon/pinterest_logo.png",
+    "desc": "Discover recipes, home ideas, style inspiration and other ideas to try."
+  },
+  {
+    "id": 3,
+    "category": "icon",
+    "title": "pinterest--icon",
+    "webImg": "./websiteImages/pinterest.png",
+    "webLogo": "./logoImages/websiteIcon/pinterest_logo.png",
+    "desc": "Discover recipes, home ideas, style inspiration and other ideas to try."
+  },
+  {
+    "id": 4,
+    "category": "icon",
+    "title": "pinterest--icon2",
+    "webImg": "./websiteImages/pinterest.png",
+    "webLogo": "./logoImages/websiteIcon/pinterest_logo.png",
+    "desc": "Discover recipes, home ideas, style inspiration and other ideas to try."
+  }
+]
