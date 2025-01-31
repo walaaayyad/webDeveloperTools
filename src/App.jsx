@@ -31,7 +31,7 @@ function App() {
           {/* End Left Section */}
 
           {/* Start Right Section */}
-          <Col className="col-8 glass-bg">
+          <Col className="col-8 glass-bg d-flex align-items-center justify-content-center">
             <ToolsBox />
           </Col>
           {/* End Right Section */}
