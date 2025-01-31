@@ -1,13 +1,12 @@
 import { useState } from "react";
+import { useButtonContext } from "./5-buttonContext"; // Import the custom hook to access the context
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Image, Col } from "react-bootstrap";
 
 function ToolsBox() {
-  const [index, setIndex] = useState(0);
+  const { selectedCategory } = useButtonContext(); // Access shared state
+  const [index, setIndex] = useState(0); // State to manage the carousel index
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
   const data = [
     {
       id: 1,
@@ -27,57 +26,60 @@ function ToolsBox() {
     },
     {
       id: 3,
-      category: "inspire",
-      title: "pinterest3",
+      category: "icon",
+      title: "pinterest--icon",
       webImg: "./websiteImages/pinterest.png",
       webLogo: "./logoImages/websiteIcon/pinterest_logo.png",
       desc: "Discover recipes, home ideas, style inspiration and other ideas to try.",
     },
     {
       id: 4,
-      category: "inspire",
-      title: "pinterest4",
+      category: "icon",
+      title: "pinterest--icon2",
       webImg: "./websiteImages/pinterest.png",
       webLogo: "./logoImages/websiteIcon/pinterest_logo.png",
       desc: "Discover recipes, home ideas, style inspiration and other ideas to try.",
     },
   ];
 
+  // Handle carousel item select
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
+  // Filter data based on the selected category
+  const filteredData = data.filter(
+    (item) => item.category === selectedCategory
+  );
+
   return (
-    <>
-      <Container fluid className="text-dark">
-        <Row>
-          <Carousel
-            activeIndex={index}
-            onSelect={handleSelect}
-            data-bs-theme="dark"
-            interval={null}
-          >
-            {data.map((i) => {
-              return (
-                <Carousel.Item
-                  key={i.id}
-                  className="text-center border border-danger"
-                >
-                  <Row className="justify-content-md-center p-5">
-                    <Col className="col-5 border border-info m-2 p-2">
-                      <Image src={i.webImg} className="website-img" />
-                    </Col>
-                    <Col className="col-5 border border-secondary m-2 p-2">
-                      <Carousel.Caption>
-                        <Image src={i.webLogo} width={50} />
-                        <h3>{i.title}</h3>
-                        <p>{i.desc}</p>
-                      </Carousel.Caption>
-                    </Col>
-                  </Row>
-                </Carousel.Item>
-              );
-            })}
-          </Carousel>
-        </Row>
-      </Container>
-    </>
+    <Container fluid className="text-dark">
+      <Row>
+        <Carousel
+          activeIndex={index} // Set the active slide to the `index` state
+          onSelect={handleSelect} // Update index when carousel item is selected
+          data-bs-theme="dark" // Apply dark theme to the carousel
+          interval={null} // Disable auto-slide
+        >
+          {filteredData.map((item) => (
+            <Carousel.Item key={item.id}>
+              <Row className="justify-content-md-center p-5">
+                <Col className="col-5">
+                  <Image src={item.webImg} className="website-img" />
+                </Col>
+                <Col className="col-5">
+                  <Carousel.Caption>
+                    <Image src={item.webLogo} width={50} />
+                    <h3>{item.title}</h3>
+                    <p>{item.desc}</p>
+                  </Carousel.Caption>
+                </Col>
+              </Row>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </Row>
+    </Container>
   );
 }
 

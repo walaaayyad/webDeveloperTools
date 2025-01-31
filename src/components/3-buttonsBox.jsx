@@ -1,17 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import { Col, Button } from "react-bootstrap";
+import { useButtonContext } from "./5-buttonContext"; // Import the custom hook to access the context
 
 function ButtonsBox() {
-  const [activeBtn, setActiveBtn] = useState();
-
-  // Create function to handle active button
-  const handleActiveBtn = (toolName) => {
-    console.log(toolName);
-  };
-  // return (
-  //   data.filter((item) => item.category.includes(toolName))
-  // )};
+  const { selectedCategory, setSelectedCategory } = useButtonContext(); // Get shared state
 
   return (
     <>
@@ -19,80 +11,72 @@ function ButtonsBox() {
         <div className="btns-box text-center">
           <Button
             variant="outline-secondary"
-            className={activeBtn === "inspire" && "active"}
+            className={selectedCategory === "inspire" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("inspire");
-              handleActiveBtn("inspire");
+              setSelectedCategory("inspire"); // Update shared state
             }}
           >
             Desigen Inspiration
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "colors" && "active"}
+            className={selectedCategory === "colors" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("colors");
-              handleActiveBtn("colors");
+              setSelectedCategory("colors");
             }}
           >
             Colors
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "icon" && "active"}
+            className={selectedCategory === "icon" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("icon");
-              handleActiveBtn("icon");
+              setSelectedCategory("icon");
             }}
           >
             Icons
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "img" && "active"}
+            className={selectedCategory === "img" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("img");
-              handleActiveBtn("img");
+              setSelectedCategory("img");
             }}
           >
             Images
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "font" && "active"}
+            className={selectedCategory === "font" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("font");
-              handleActiveBtn("font");
+              setSelectedCategory("font");
             }}
           >
             Fonts
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "border" && "active"}
+            className={selectedCategory === "border" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("border");
-              handleActiveBtn("border");
+              setSelectedCategory("border");
             }}
           >
             Borders
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "animation" && "active"}
+            className={selectedCategory === "animation" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("animation");
-              handleActiveBtn("animation");
+              setSelectedCategory("animation");
             }}
           >
             Animation
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "shape" && "active"}
+            className={selectedCategory === "shape" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("shape");
-              handleActiveBtn("shape");
+              setSelectedCategory("shape");
             }}
           >
             Shapes
@@ -100,70 +84,63 @@ function ButtonsBox() {
 
           <Button
             variant="outline-secondary"
-            className={activeBtn === "ps" && "active"}
+            className={selectedCategory === "ps" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("ps");
-              handleActiveBtn("ps");
+              setSelectedCategory("ps");
             }}
           >
             Photo Editor
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "bgRemover" && "active"}
+            className={selectedCategory === "bgRemover" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("bgRemover");
-              handleActiveBtn("bgRemover");
+              setSelectedCategory("bgRemover");
             }}
           >
             Remove Background
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "imgCompress" && "active"}
+            className={selectedCategory === "imgCompress" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("imgCompress");
-              handleActiveBtn("imgCompress");
+              setSelectedCategory("imgCompress");
             }}
           >
             Compress Images
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "api" && "active"}
+            className={selectedCategory === "api" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("api");
-              handleActiveBtn("api");
+              setSelectedCategory("api");
             }}
           >
             APIs
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "pwa" && "active"}
+            className={selectedCategory === "pwa" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("pwa");
-              handleActiveBtn("pwa");
+              setSelectedCategory("pwa");
             }}
           >
             PWA Tools
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "optimize" && "active"}
+            className={selectedCategory === "optimize" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("optimize");
-              handleActiveBtn("optimize");
+              setSelectedCategory("optimize");
             }}
           >
             Code Optimization
           </Button>
           <Button
             variant="outline-secondary"
-            className={activeBtn === "screenShot" && "active"}
+            className={selectedCategory === "screenShot" ? "active" : ""}
             onClick={() => {
-              setActiveBtn("screenShot");
-              handleActiveBtn("screenShot");
+              setSelectedCategory("screenShot");
             }}
           >
             Full Page Screenshot
