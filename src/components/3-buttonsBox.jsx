@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Button } from "react-bootstrap";
-import { useButtonContext } from "./5-buttonContext"; // Import the custom hook to access the context
+import { useButtonContext } from "../ButtonContext"; // Import the custom hook to access the context
 
 function ButtonsBox() {
   const { selectedCategory, setSelectedCategory } = useButtonContext(); // Get shared state

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useButtonContext } from "./5-buttonContext"; // Import the custom hook to access the context
+import { useButtonContext } from "../ButtonContext"; // Import the custom hook to access the context
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Image, Col } from "react-bootstrap";
 

@@ -7,7 +7,7 @@ import NavBar from "./components/1-navBar";
 import Hero from "./components/2-heroSection";
 import ButtonsBox from "./components/3-buttonsBox";
 import ToolsBox from "./components/4-previewBox";
-import { ButtonProvider } from "./components/5-ButtonContext"; // Import the provider
+import { ButtonProvider } from "./ButtonContext"; // Import the provider
 
 function App() {
   return (
