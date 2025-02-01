@@ -12,15 +12,15 @@ import { ButtonProvider } from "./ButtonContext"; // Import the provider
 function App() {
   return (
     <ButtonProvider>
-      <Container
-        fluid
-        className="border hero-section d-flex align-items-center justify-content-center flex-column"
-      >
+      <Container fluid className="hero-section pt-5">
         <NavBar />
 
-        <Container fluid className="d-flex">
+        <Container
+          fluid
+          className="d-flex flex-wrap align-items-center justify-content-center pt-5"
+        >
           {/* Start Left Section */}
-          <Col className="col-4">
+          <Col className="hero-left-section col-sm-12 col-md-12 col-lg-4">
             <Container>
               <Row>
                 <Hero />
@@ -31,7 +31,7 @@ function App() {
           {/* End Left Section */}
 
           {/* Start Right Section */}
-          <Col className="col-8 glass-bg d-flex align-items-center justify-content-center">
+          <Col className="hero-right-section text-center mt-5 col-sm-12 col-md-12 col-lg-8 glass-bg d-flex align-items-center justify-content-center">
             <ToolsBox />
           </Col>
           {/* End Right Section */}

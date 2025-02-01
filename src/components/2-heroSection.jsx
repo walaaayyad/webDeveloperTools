@@ -11,7 +11,7 @@ function HeroSection() {
         <Image
           src="./logoImages/person2.png"
           className="hero-img"
-          width={400}
+          width={350}
         />
       </Col>
     </>

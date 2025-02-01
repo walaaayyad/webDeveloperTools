@@ -40,11 +40,11 @@ function ToolsBox() {
           >
             {filteredData.map((item) => (
               <Carousel.Item key={item.id}>
-                <Row className="justify-content-md-center p-5">
-                  <Col className="col-5">
+                <Row className="d-flex flex-sm-column-reverse flex-md-column-reverse flex-lg-row flex-xl-row justify-content-lg-center p-5">
+                  <Col className="col-xs-12 col-sm-12 col-md-12 col-lg-5">
                     <Image src={item.webImg} className="website-img" />
                   </Col>
-                  <Col className="col-5">
+                  <Col className="col-xs-12 col-sm-12 col-md-12 col-lg-5">
                     <Carousel.Caption>
                       <Image src={item.webLogo} width={50} />
                       <h3>{item.title}</h3>
