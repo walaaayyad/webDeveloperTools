@@ -60,6 +60,7 @@ h1 {
 .website-img {
   width: 100%;
   height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /* button {
@@ -116,7 +117,6 @@ body {
 @media screen and (max-width: 1000px) {
   .website-img {
     width: 50%;
-    border: 2px solid rgb(228, 34, 38);
   }
 }
 @media screen and (max-width: 900px) {
@@ -140,7 +140,6 @@ body {
   .website-img {
     width: 80%;
     height: 80%;
-    border: 1px solid green;
   }
 }
 
@@ -173,9 +172,25 @@ body {
   .btns-box button {
     font-size: 0.8em;
   }
+
+  /* Carousel */
   .website-img {
-    width: 100%;
-    height: 100%;
-    border: 1px solid red;
+    width: 80%;
+    height: 15rem;
+  }
+  .carousel-control-prev {
+    left: -2.2em !important;
+  }
+  .carousel-control-next {
+    right: -2.2em !important;
+  }
+  .carousel-indicators {
+    bottom: -2em !important;
+    margin-bottom: 0.2rem !important;
+  }
+  .carousel-item p {
+    height: 15rem;
+    margin-bottom: 0rem;
+    padding-top: 2rem;
   }
 }
