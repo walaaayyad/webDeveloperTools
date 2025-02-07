@@ -57,6 +57,9 @@ h1 {
 .carousel-caption {
   position: unset !important;
 }
+.carousel-caption img {
+  border-radius: 10px;
+}
 .website-img {
   width: 100%;
   height: 100%;
@@ -157,6 +160,11 @@ body {
     height: auto;
     align-items: flex-start;
   }
+  .hero-right-section {
+    height: 41rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 1rem !important;
+  }
   .flex-sm-column-reverse {
     flex-direction: column-reverse !important;
   }
@@ -175,14 +183,14 @@ body {
 
   /* Carousel */
   .website-img {
-    width: 80%;
+    width: 90%;
     height: 15rem;
   }
   .carousel-control-prev {
-    left: -2.2em !important;
+    left: -1.2rem !important;
   }
   .carousel-control-next {
-    right: -2.2em !important;
+    right: -1.2rem !important;
   }
   .carousel-indicators {
     bottom: -2em !important;
@@ -190,7 +198,7 @@ body {
   }
   .carousel-item p {
     height: 15rem;
-    margin-bottom: 0rem;
-    padding-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
   }
 }
