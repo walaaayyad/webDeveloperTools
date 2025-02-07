@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Button } from "react-bootstrap";
 import { useButtonContext } from "../ButtonContext"; // Import the custom hook to access the context
 
-function ButtonsBox() {
+function ButtonsBox({ handleClose }) {
   const { selectedCategory, setSelectedCategory } = useButtonContext(); // Get shared state
 
   return (
@@ -14,6 +14,7 @@ function ButtonsBox() {
             className={selectedCategory === "inspire" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("inspire"); // Update shared state
+              handleClose();
             }}
           >
             Desigen Inspiration
@@ -23,6 +24,7 @@ function ButtonsBox() {
             className={selectedCategory === "colors" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("colors");
+              handleClose();
             }}
           >
             Colors
@@ -32,6 +34,7 @@ function ButtonsBox() {
             className={selectedCategory === "icon" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("icon");
+              handleClose();
             }}
           >
             Icons
@@ -41,6 +44,7 @@ function ButtonsBox() {
             className={selectedCategory === "img" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("img");
+              handleClose();
             }}
           >
             Images
@@ -50,6 +54,7 @@ function ButtonsBox() {
             className={selectedCategory === "font" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("font");
+              handleClose();
             }}
           >
             Fonts
@@ -59,6 +64,7 @@ function ButtonsBox() {
             className={selectedCategory === "border" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("border");
+              handleClose();
             }}
           >
             Borders
@@ -68,6 +74,7 @@ function ButtonsBox() {
             className={selectedCategory === "animation" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("animation");
+              handleClose();
             }}
           >
             Animation
@@ -77,6 +84,7 @@ function ButtonsBox() {
             className={selectedCategory === "shape" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("shape");
+              handleClose();
             }}
           >
             Shapes
@@ -87,6 +95,7 @@ function ButtonsBox() {
             className={selectedCategory === "ps" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("ps");
+              handleClose();
             }}
           >
             Photo Editor
@@ -96,6 +105,7 @@ function ButtonsBox() {
             className={selectedCategory === "bgRemover" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("bgRemover");
+              handleClose();
             }}
           >
             Remove Background
@@ -105,6 +115,7 @@ function ButtonsBox() {
             className={selectedCategory === "imgCompress" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("imgCompress");
+              handleClose();
             }}
           >
             Compress Images
@@ -114,6 +125,7 @@ function ButtonsBox() {
             className={selectedCategory === "api" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("api");
+              handleClose();
             }}
           >
             APIs
@@ -123,6 +135,7 @@ function ButtonsBox() {
             className={selectedCategory === "pwa" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("pwa");
+              handleClose();
             }}
           >
             PWA Tools
@@ -132,6 +145,7 @@ function ButtonsBox() {
             className={selectedCategory === "optimize" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("optimize");
+              handleClose();
             }}
           >
             Code Optimization
@@ -141,6 +155,7 @@ function ButtonsBox() {
             className={selectedCategory === "screenShot" ? "active" : ""}
             onClick={() => {
               setSelectedCategory("screenShot");
+              handleClose();
             }}
           >
             Full Page Screenshot
