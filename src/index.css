@@ -146,6 +146,13 @@ body {
   }
 }
 
+/* offCanvas model */
+@media (max-width: 767.98px) {
+  .offcanvas-md {
+    --bs-offcanvas-transition: transform 1s ease-in-out !important;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .navbar {
     height: 50px !important;
