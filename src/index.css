@@ -2,21 +2,17 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --primary-color: #457f80;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  --primary-color: rgb(242, 246, 249);
+}
+body {
+  background-color: #9cc3f5 !important;
 }
 
-/* Hero Section */
+/*----- Hero Section -----*/
 .hero-section {
   height: 100vh;
+  background: url("../public/background.jpg") no-repeat center/cover
+    /*<a href="https://www.freepik.com/free-vector/3d-graphic-design-concept-pastel-colors_6209947.htm?log-in=google#fromView=image_search_similar&page=1&position=1&uuid=fecfd501-5c26-40be-aedf-35737226d0f8&query=3d+ai+computer">Image by pikisuperstar on Freepik</a>*/;
 }
 .hero-left-section {
 }
@@ -27,33 +23,44 @@ h1 {
   font-size: 4em !important;
   color: var(--primary-color) !important;
 }
-.hero-img {
+/* .hero-img {
   filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.3));
-}
+} */
 .glass-bg {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.btn-outline-secondary {
-  --bs-btn-color: #457f80 !important;
-  --bs-btn-border-color: #457f80 !important;
-  --bs-btn-hover-bg: #457f80 !important;
-  --bs-btn-hover-border-color: #457f80 !important;
-  --bs-btn-active-bg: #457f80 !important;
-  --bs-btn-active-border-color: #457f80 !important;
-  --bs-btn-disabled-color: #457f80 !important;
-  --bs-btn-disabled-border-color: #457f80 !important;
-}
-/* Buttons Box */
+/*----- Buttons Box -----*/
 .btns-box button {
   margin: 5px;
+  width: 250px;
+  background: #f3f2fb;
+  border-radius: 10px;
+  box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
+    inset 15px 15px 10px rgba(255, 255, 255, 0.75),
+    -5px -5px 30px rgba(255, 255, 255, 0.55),
+    inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+  color: #46609d;
+  border: none;
 }
-/* Carousel */
+.btns-box button:hover,
+.btns-box button:active {
+  box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.75),
+    -5px -5px 30px rgba(255, 255, 255, 0.55),
+    inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-outline-primary {
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-hover-bg: #7091d6 !important;
+  --bs-btn-active-bg: #7091d6 !important;
+}
+/*----- Carousel -----*/
 .carousel-caption {
   position: unset !important;
 }
@@ -66,49 +73,8 @@ h1 {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-body {
-  background: rgb(214, 205, 198);
-  background: linear-gradient(
-    180deg,
-    rgba(214, 205, 198, 1) 32%,
-    rgba(215, 210, 200, 1) 45%,
-    rgba(227, 223, 214, 1) 59%,
-    rgba(234, 240, 232, 1) 70%
-  );
-  background-repeat: no-repeat;
-}
-/* Responsive */
+/***********************************************/
+/*----- Responsive -----*/
 @media screen and (max-width: 1400px) {
   h1 {
     font-size: 3em !important;
@@ -125,20 +91,21 @@ body {
 @media screen and (max-width: 900px) {
   .hero-section {
     height: auto;
+    background: url(/webDeveloperTools/public/background.jpg) no-repeat
+      center/contain fixed #9cc3f5;
   }
   .pt-5 {
     padding-top: 0rem !important;
   }
-  h1 {
-    font-size: 3em !important;
-  }
   .hero-left-section {
-    height: 100vh;
     display: flex;
     align-items: center;
   }
   .hero-right-section {
     margin-bottom: 50px;
+  }
+  .btns-box button {
+    width: 230px;
   }
   .website-img {
     width: 80%;
@@ -209,3 +176,7 @@ body {
     padding: 1rem;
   }
 }
+
+/*
+https://www.freepik.com/free-video/motion-graphic-gradient-network-connection-background_3294655#fromView=image_search_similar&page=8&position=25&uuid=1a016912-3945-4211-9f69-74390810c0ab
+*/
