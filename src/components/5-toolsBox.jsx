@@ -4,7 +4,7 @@ import data from "../data.json";
 import Carousel from "react-bootstrap/Carousel";
 import { Container, Row, Image, Col } from "react-bootstrap";
 
-function ToolsBox() {
+function ToolsBox({ dataSectionRef }) {
   const { selectedCategory } = useButtonContext(); // Access shared state
   const [index, setIndex] = useState(0); // State to manage the carousel index
 
@@ -19,7 +19,7 @@ function ToolsBox() {
   );
 
   return (
-    <Container fluid className="text-dark">
+    <Container fluid className="text-dark" ref={dataSectionRef}>
       <Row>
         {/* Display message if no data is available */}
         {filteredData.length === 0 ? (

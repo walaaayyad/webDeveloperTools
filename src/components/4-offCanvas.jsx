@@ -3,7 +3,7 @@ import ButtonsBox from "./3-buttonsBox";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
-function OffCanvas() {
+function OffCanvas({ onButtonClick }) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -24,7 +24,7 @@ function OffCanvas() {
           <Offcanvas.Title>Responsive offcanvas</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <ButtonsBox handleClose={handleClose} />
+          <ButtonsBox handleClose={handleClose} onButtonClick={onButtonClick} />
         </Offcanvas.Body>
       </Offcanvas>
     </>
