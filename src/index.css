@@ -11,8 +11,11 @@ body {
 /*----- Hero Section -----*/
 .hero-section {
   height: 100vh;
-  background: url("../public/background.jpg") no-repeat center/cover
+  background-image: url("../public/background.jpg")
     /*<a href="https://www.freepik.com/free-vector/3d-graphic-design-concept-pastel-colors_6209947.htm?log-in=google#fromView=image_search_similar&page=1&position=1&uuid=fecfd501-5c26-40be-aedf-35737226d0f8&query=3d+ai+computer">Image by pikisuperstar on Freepik</a>*/;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-left-section {
 }
@@ -91,8 +94,10 @@ h1 {
 @media screen and (max-width: 900px) {
   .hero-section {
     height: auto;
-    background: url(/webDeveloperTools/public/background.jpg) no-repeat
-      center/contain fixed #9cc3f5;
+    background-image: url(/webDeveloperTools/public/background.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-color: #9cc3f5;
   }
   .pt-5 {
     padding-top: 0rem !important;
