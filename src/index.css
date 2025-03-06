@@ -94,7 +94,6 @@ h1 {
 @media screen and (max-width: 900px) {
   .hero-section {
     height: auto;
-    background-image: url(/webDeveloperTools/public/background.jpg);
     background-attachment: fixed;
     background-size: contain;
     background-color: #9cc3f5;
