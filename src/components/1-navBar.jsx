@@ -4,16 +4,21 @@ import { Navbar, Container } from "react-bootstrap";
 function NavBar() {
   return (
     <>
-      <Navbar expand="lg" fixed="top" className="bg-body-tertiary">
-        <Container fluid className="ms-5">
+      <Navbar
+        expand="lg"
+        fixed="top"
+        className="bg-body-transparent border-bottom border-white"
+      >
+        <Container fluid className="ms-5 pt-2">
           <Navbar.Brand href="#">
-            <img
+            {/* <img
               src="./logoImages/logo.png"
               width="200"
               height="70"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
-            />
+            /> */}
+            <p className="lead fw-bold text-white">WEB TOOLS</p>
           </Navbar.Brand>
         </Container>
       </Navbar>
