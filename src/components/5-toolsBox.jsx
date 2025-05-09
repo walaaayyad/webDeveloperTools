@@ -41,14 +41,20 @@ function ToolsBox({ dataSectionRef }) {
             {filteredData.map((item) => (
               <Carousel.Item key={item.id}>
                 <Row className="d-flex flex-sm-column-reverse flex-md-column-reverse flex-lg-row flex-xl-row justify-content-lg-center p-sm-1 p-md-5">
-                  <Col className="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                  {/* <Col className="col-xs-12 col-sm-12 col-md-12 col-lg-5">
                     <Image src={item.webImg} className="website-img" />
-                  </Col>
-                  <Col className="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                  </Col> */}
+                  <Col className="col-xs-12 col-sm-12 col-md-12 col-lg-8 border">
                     <Carousel.Caption>
-                      <Image src={item.webLogo} width={50} />
-                      <h3>{item.title}</h3>
-                      <p>{item.desc}</p>
+                      <Image className="my-3" src={item.webLogo} width={50} />
+                      <h3 className="my-3">{item.title}</h3>
+                      <p  className="my-3 lead">{item.desc}</p>
+                      <a
+                          className="btn link_btn fs-5 px-5 mt-4"
+                          href={item.link}
+                          target="_blank"
+                          aria-label="Follow the link"
+                      >Visit Now &rarr;</a>
                     </Carousel.Caption>
                   </Col>
                 </Row>

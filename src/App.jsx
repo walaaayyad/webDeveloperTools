@@ -33,7 +33,7 @@ function App() {
           className="d-flex flex-wrap align-items-center justify-content-center pt-3 pt-sm-5 border"
         >
           {/* Start Left Section */}
-          <Col className="hero-left-section col-sm-12 col-md-12 col-lg-2 border">
+          <Col className="hero-left-section col-sm-12 col-md-12 col-lg-3 border">
             <Container fluid>
               <Row>
                 {/* <Hero /> */}
@@ -45,7 +45,7 @@ function App() {
           {/* End Left Section */}
 
           {/* Start Right Section */}
-          <Col className="hero-right-section text-center mt-5 col-12 col-sm-12 col-md-12 col-lg-10 glass-bg d-flex align-items-center justify-content-center">
+          <Col className="hero-right-section text-center mt-5 col-12 col-sm-12 col-md-12 col-lg-9 glass-bg d-flex align-items-center justify-content-center">
             <ToolsBox dataSectionRef={dataSectionRef} />
           </Col>
           {/* End Right Section */}

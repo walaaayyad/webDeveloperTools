@@ -12,7 +12,7 @@ function OffCanvas({ onButtonClick }) {
   return (
     <>
       <Button variant="primary" className="d-md-none" onClick={handleShow}>
-        Launch
+        Open Tools Bar  
       </Button>
       <Offcanvas
         show={show}

@@ -3,7 +3,6 @@
     "id": 1,
     "category": "inspire",
     "title": "pinterest",
-    "webImg": "./websiteImages/pinterest-min.png",
     "webLogo": "./logoImages/websiteIcon/pinterest-min.png",
     "link": "https://www.pinterest.com/ideas/website-page-layout-design/905230495388/",
     "desc": "Pinterest is a visual discovery engine where you can find thousands of design ideas for web pages, UI elements, and overall aesthetics. Users often share collections of inspiration boards on web design trends, color palettes, layouts, and typography. It's a fantastic resource for discovering fresh concepts and gathering ideas from a diverse range of styles."
@@ -12,7 +11,6 @@
     "id": 2,
     "category": "inspire",
     "title": "Awwwards",
-    "webImg": "./websiteImages/awwwards-min.png",
     "webLogo": "./logoImages/websiteIcon/awwwards-min.png",
     "link": "https://www.awwwards.com",
     "desc": "Awwwards showcases the best web designs from around the world, awarding creative and innovative websites. It’s an excellent resource for finding cutting-edge designs and new trends in web development, focusing on aesthetics, functionality, and user experience."
@@ -21,7 +19,6 @@
     "id": 3,
     "category": "inspire",
     "title": "CSS Design Awards ",
-    "webImg": "./websiteImages/cssdesignawards-min.png",
     "webLogo": "./logoImages/websiteIcon/cssDesign.png",
     "link": "https://cssdesignawards.com",
     "desc": "CSS Design Awards highlights high-quality websites with outstanding designs and UI/UX. It includes a mix of minimalist, modern, and experimental designs that can inspire web developers to create something unique while maintaining functionality."
@@ -30,7 +27,6 @@
     "id": 4,
     "category": "inspire",
     "title": "Behance",
-    "webImg": "./websiteImages/behance-min.png",
     "webLogo": "./logoImages/websiteIcon/behance-min.png",
     "link": "https://www.behance.net",
     "desc": "Behance is a platform for creative professionals to showcase their portfolios, including web design projects. It's a great place to explore interactive web designs, UI/UX concepts, and digital art projects. Designers from all over the world share their work, offering endless inspiration and fresh ideas for web development."
@@ -39,7 +35,6 @@
     "id": 5,
     "category": "inspire",
     "title": "Siteinspire",
-    "webImg": "./websiteImages/siteinspire-min.png",
     "webLogo": "./logoImages/websiteIcon/siteinspire-min.png",
     "link": "https://www.siteinspire.com",
     "desc": "Siteinspire offers a curated collection of the best web designs categorized by style, type, and industry. This site is great for seeing a wide variety of real-world projects across different niches, helping web developers gain insights into effective design patterns and layouts."
