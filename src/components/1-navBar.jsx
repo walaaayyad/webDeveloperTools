@@ -9,7 +9,7 @@ function NavBar() {
         fixed="top"
         className="bg-body-transparent border-bottom border-dark"
       >
-        <Container fluid className="ms-5 pt-2">
+        <Container className="ms-5 pt-2">
           <Navbar.Brand href="#">
             {/* <img
               src="./logoImages/logo.png"

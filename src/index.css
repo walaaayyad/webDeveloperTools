@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -7,6 +8,11 @@
 body {
   position: relative;
   /* background-color: #9cc3f5 !important; */
+}
+.navbar p {
+  font-family: "Agdasima", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .bg-circle {
   width: 500px;
@@ -47,11 +53,14 @@ body {
   height: 50vh;
 }
 h1 {
-  font-size: 4em !important;
+  font-family: "Agdasima", sans-serif;
+  font-weight: 700 !important;
+  font-style: normal;
+  font-size: 4rem !important;
   /* color: var(--primary-color) !important; */
 }
 .grade-title {
-  background: -webkit-linear-gradient(-45deg, #36e3ef, #a78ddc, #db3db6);
+  background: -webkit-linear-gradient(-45deg, #3a7bd5,#36e3ef, #a78ddc, #db3db6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -65,9 +74,11 @@ h1 {
   
 }
 /*----- Buttons -----*/         
-.btns-box button {
+.btns-box button {         
   /*[ https://gradientbuttons.colorion.co/]*/
   background-image: linear-gradient(to right, #89fffd 0%, #ef32d9  51%, #89fffd  100%);
+  background-image: linear-gradient(to right, #3a7bd5  0%, #00d2ff  41%, #ef32d9 51%, #3a7bd5  100%);
+  background-image: linear-gradient(135deg, #3a7bd5 0%,#36e3ef 35%, #a78ddc 51%, #36e3ef 100%);
   width: 200px;
   height: 50px;
   margin: 5px;
