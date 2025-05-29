@@ -7,7 +7,7 @@ function HeroSection() {
       <Row className="p-5  m-5 border border-danger">
         <Col className="col-6">
         <h1 className="text-center">
-          Web Developer <br /> Tools
+         <span className="grade-title">Free</span> Web Developer <br /> Tools
         </h1>
         
       </Col>

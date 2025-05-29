@@ -5,8 +5,32 @@
   --primary-color: #f2f6f9;
 }
 body {
+  position: relative;
   /* background-color: #9cc3f5 !important; */
 }
+.bg-circle {
+  width: 500px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #3db9e35a;
+  position: absolute;
+  filter: blur(170px);
+  z-index: -1;
+}
+.bg-left-circle {
+  left: -5%;
+  top: -5%;
+} 
+.bg-right-circle {
+  right: -5%;
+  top: -7%;
+} 
+.bg-middle-circle {
+  background-color: #3db9e32d !important;
+  width: 700px !important;
+  left: 25%;
+  top: 50%;
+} 
 
 /*----- Hero Section -----*/
 .hero-section {
@@ -26,17 +50,10 @@ h1 {
   font-size: 4em !important;
   /* color: var(--primary-color) !important; */
 }
-/* .hero-img {
-  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.3));
-} */
-.glass-bg {
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.grade-title {
+  background: -webkit-linear-gradient(-45deg, #36e3ef, #a78ddc, #db3db6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*----- img -----*/
 .logoImg {
@@ -47,38 +64,37 @@ h1 {
 .card {
   
 }
-/*----- Buttons -----*/
+/*----- Buttons -----*/         
 .btns-box button {
+  /*[ https://gradientbuttons.colorion.co/]*/
+  background-image: linear-gradient(to right, #89fffd 0%, #ef32d9  51%, #89fffd  100%);
+  width: 200px;
+  height: 50px;
   margin: 5px;
-  width: 250px;
-  background: #f3f2fb;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
   border-radius: 10px;
-  box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
-    inset 15px 15px 10px rgba(255, 255, 255, 0.75),
-    -5px -5px 30px rgba(255, 255, 255, 0.55),
-    inset -1px -1px 10px rgba(0, 0, 0, 0.2);
-  color: #46609d;
-  border: none;
 }
 .btns-box button:hover,
 .btns-box button:active {
-  box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
-    inset 5px 5px 10px rgba(255, 255, 255, 0.75),
-    -5px -5px 30px rgba(255, 255, 255, 0.55),
-    inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 .btn-outline-primary {
-  --bs-btn-hover-color: #fff !important;
-  --bs-btn-hover-bg: #7091d6 !important;
-  --bs-btn-active-bg: #7091d6 !important;
+  --bs-btn-border-color: unset !important;
 }
-.link_btn {
+/* .link_btn {
   color: #760303 !important;
   display:  block !important;
-}
-.link_btn:hover {
+} */
+/* .link_btn:hover {
   background-color: #f2f6f987 !important;
-}
+} */
 /*----- Carousel -----*/
 .carousel-caption {
   position: unset !important;

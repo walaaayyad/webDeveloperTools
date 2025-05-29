@@ -7,8 +7,8 @@ function ButtonsBox({ handleClose, onButtonClick }) {
 
   return (
     <>
-    <Row className=" m-5 border border-success">
-      <Col className="col-12 m-5">
+    <Row className="border border-success">
+      <Col className="col-12 my-3">
         <div className="btns-box text-center">
           <Button
             variant="outline-primary"
@@ -19,7 +19,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
               onButtonClick();
             }}
           >
-            Desigen Inspiration
+            Inspiration
           </Button>
           <Button
             variant="outline-primary"
@@ -29,7 +29,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
               handleClose();
             }}
           >
-            Colors
+            Design
           </Button>
           <Button
             variant="outline-primary"
@@ -39,7 +39,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
               handleClose();
             }}
           >
-            Icons
+            Assets
           </Button>
           <Button
             variant="outline-primary"
@@ -49,7 +49,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
               handleClose();
             }}
           >
-            Images
+            CSS Tools
           </Button>
           <Button
             variant="outline-primary"
@@ -59,98 +59,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
               handleClose();
             }}
           >
-            Fonts
-          </Button>
-          <Button
-            variant="outline-primary"
-            className={selectedCategory === "border" ? "active" : ""}
-            onClick={() => {
-              setSelectedCategory("border");
-              handleClose();
-            }}
-          >
-            Borders
-          </Button>
-          <Button
-            variant="outline-primary"
-            className={selectedCategory === "animation" ? "active" : ""}
-            onClick={() => {
-              setSelectedCategory("animation");
-              handleClose();
-            }}
-          >
-            Animation
-          </Button>
-          <Button
-            variant="outline-primary"
-            className={selectedCategory === "shape" ? "active" : ""}
-            onClick={() => {
-              setSelectedCategory("shape");
-              handleClose();
-            }}
-          >
-            Shapes
-          </Button>
-
-          <Button
-            variant="outline-primary"
-            className={selectedCategory === "ps" ? "active" : ""}
-            onClick={() => {
-              setSelectedCategory("ps");
-              handleClose();
-            }}
-          >
-            Photo Editor
-          </Button>
-          <Button
-            variant="outline-primary"
-            className={selectedCategory === "bgRemover" ? "active" : ""}
-            onClick={() => {
-              setSelectedCategory("bgRemover");
-              handleClose();
-            }}
-          >
-            Remove Background
-          </Button>
-          <Button
-            variant="outline-primary"
-            className={selectedCategory === "imgCompress" ? "active" : ""}
-            onClick={() => {
-              setSelectedCategory("imgCompress");
-              handleClose();
-            }}
-          >
-            Compress Images
-          </Button>
-          <Button
-            variant="outline-primary"
-            className={selectedCategory === "api" ? "active" : ""}
-            onClick={() => {
-              setSelectedCategory("api");
-              handleClose();
-            }}
-          >
-            APIs
-          </Button>
-          <Button
-            variant="outline-primary"
-            className={selectedCategory === "pwa" ? "active" : ""}
-            onClick={() => {
-              setSelectedCategory("pwa");
-              handleClose();
-            }}
-          >
-            PWA Tools
-          </Button>
-          <Button
-            variant="outline-primary"
-            className={selectedCategory === "optimize" ? "active" : ""}
-            onClick={() => {
-              setSelectedCategory("optimize");
-              handleClose();
-            }}
-          >
-            Code Optimization
+            JS Tools
           </Button>
           <Button
             variant="outline-primary"
@@ -160,7 +69,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
               handleClose();
             }}
           >
-            Full Page Screenshot
+            Production Tools
           </Button>
         </div>
       </Col>

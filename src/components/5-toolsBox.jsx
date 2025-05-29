@@ -22,7 +22,7 @@ function ToolsBox({ dataSectionRef }) {
 
   return (
     <Container fluid className="text-dark" ref={dataSectionRef}>
-      <Row>
+      <Row className="m-5">
         {/* Display message if no data is available
         {filteredData.length === 0 ? (
           <Col className="text-center">
