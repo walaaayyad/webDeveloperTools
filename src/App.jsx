@@ -29,24 +29,27 @@ function App() {
       <Container fluid className="hero-section pt-5">
         <NavBar />
         <Hero />
+        <ButtonsBox />
+        <ToolsBox dataSectionRef={dataSectionRef} />
         <Container
           fluid
           className="border border-info"
         >
-          {/* Start Left Section */}
+          {
+          /*------------------------ Start Left Section 
           <Col className="hero-left-section col-sm-12 col-md-12 col-lg-3 border">
             <Container fluid>
                 
-                {/* <ButtonsBox /> */}
-                {/* <OffCanvas onButtonClick={handleScrollToData} /> */}
+                <ButtonsBox /> 
+                <OffCanvas onButtonClick={handleScrollToData} /> 
             </Container>
           </Col>
-          {/* End Left Section */}
+          ------------------------- End Left Section */}
 
           {/* Start Right Section */}
-          <Col className="hero-right-section text-center mt-5 col-12 col-sm-12 col-md-12 col-lg-9 glass-bg d-flex align-items-center justify-content-center">
+          {/* <Col className="hero-right-section text-center mt-5 col-12 col-sm-12 col-md-12 col-lg-9 glass-bg d-flex align-items-center justify-content-center">
             <ToolsBox dataSectionRef={dataSectionRef} />
-          </Col>
+          </Col> */}
           {/* End Right Section */}
         </Container>
       </Container>

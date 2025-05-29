@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Button } from "react-bootstrap";
+import {Row, Col, Button } from "react-bootstrap";
 import { useButtonContext } from "../ButtonContext"; // Import the custom hook to access the context
 
 function ButtonsBox({ handleClose, onButtonClick }) {
@@ -7,7 +7,8 @@ function ButtonsBox({ handleClose, onButtonClick }) {
 
   return (
     <>
-      <Col className="col-12 mt-5">
+    <Row className=" m-5 border border-success">
+      <Col className="col-12 m-5">
         <div className="btns-box text-center">
           <Button
             variant="outline-primary"
@@ -163,6 +164,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
           </Button>
         </div>
       </Col>
+    </Row>  
     </>
   );
 }

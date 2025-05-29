@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useButtonContext } from "../ButtonContext"; // Import the custom hook to access the context
 import data from "../data.json";
 import Carousel from "react-bootstrap/Carousel";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import { Container, Row, Image, Col } from "react-bootstrap";
 
 function ToolsBox({ dataSectionRef }) {
@@ -21,7 +23,7 @@ function ToolsBox({ dataSectionRef }) {
   return (
     <Container fluid className="text-dark" ref={dataSectionRef}>
       <Row>
-        {/* Display message if no data is available */}
+        {/* Display message if no data is available
         {filteredData.length === 0 ? (
           <Col className="text-center">
             <h2>Welcome, Creative Mind! 🌟</h2>
@@ -30,38 +32,25 @@ function ToolsBox({ dataSectionRef }) {
               explore some amazing resources.
             </p>
           </Col>
-        ) : (
-          // Display carousel when data is available
-          <Carousel
-            activeIndex={index}
-            onSelect={handleSelect}
-            data-bs-theme="dark"
-            interval={null}
-          >
-            {filteredData.map((item) => (
-              <Carousel.Item key={item.id}>
-                <Row className="d-flex flex-sm-column-reverse flex-md-column-reverse flex-lg-row flex-xl-row justify-content-lg-center p-sm-1 p-md-5">
-                  {/* <Col className="col-xs-12 col-sm-12 col-md-12 col-lg-5">
-                    <Image src={item.webImg} className="website-img" />
-                  </Col> */}
-                  <Col className="col-xs-12 col-sm-12 col-md-12 col-lg-8 border">
-                    <Carousel.Caption>
-                      <Image className="my-3" src={item.webLogo} width={50} />
-                      <h3 className="my-3">{item.title}</h3>
-                      <p  className="my-3 lead">{item.desc}</p>
-                      <a
-                          className="btn link_btn fs-5 px-5 mt-4"
-                          href={item.link}
-                          target="_blank"
-                          aria-label="Follow the link"
-                      >Visit Now &rarr;</a>
-                    </Carousel.Caption>
-                  </Col>
-                </Row>
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        )}
+        ) : ( */}
+        
+          {filteredData.map((item) => (
+            <Col xs={12} sm={6} md={4} lg={3} 
+                 className="text-center d-flex justify-content-center mb-4">
+            <Card className="card" key={item.id}>
+              <Card.Img className="logoImg" src={item.webLogo} />
+              <Card.Body>
+                <Card.Title>{item.title}</Card.Title>
+                <Card.Text>
+                  {item.desc}
+                </Card.Text>
+                <Button variant="primary" href={item.link} target="_blank">Visit &rarr;</Button>
+              </Card.Body>
+            </Card>
+            </Col>
+          ))}
+          
+        {/* )} */}
       </Row>
     </Container>
   );

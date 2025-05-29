@@ -7,7 +7,7 @@ function NavBar() {
       <Navbar
         expand="lg"
         fixed="top"
-        className="bg-body-transparent border-bottom border-white"
+        className="bg-body-transparent border-bottom border-dark"
       >
         <Container fluid className="ms-5 pt-2">
           <Navbar.Brand href="#">
