@@ -28,18 +28,17 @@ function App() {
     <ButtonProvider>
       <Container fluid className="hero-section pt-5">
         <NavBar />
+        <Hero />
         <Container
           fluid
-          className="d-flex flex-wrap align-items-center justify-content-center pt-3 pt-sm-5 border"
+          className="border border-info"
         >
           {/* Start Left Section */}
           <Col className="hero-left-section col-sm-12 col-md-12 col-lg-3 border">
             <Container fluid>
-              <Row>
-                {/* <Hero /> */}
+                
                 {/* <ButtonsBox /> */}
-                <OffCanvas onButtonClick={handleScrollToData} />
-              </Row>
+                {/* <OffCanvas onButtonClick={handleScrollToData} /> */}
             </Container>
           </Col>
           {/* End Left Section */}

@@ -18,7 +18,7 @@ function NavBar() {
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             /> */}
-            <p className="lead fw-bold text-white">WEB TOOLS</p>
+            <p className="lead fw-bold">WEB TOOLS</p>
           </Navbar.Brand>
         </Container>
       </Navbar>
