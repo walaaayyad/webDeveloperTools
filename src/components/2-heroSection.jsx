@@ -4,8 +4,8 @@ import {Row, Col, Image } from "react-bootstrap";
 function HeroSection() {
   return (
     <>
-      <Row className="mt-5 border border-danger">
-        <Col className="col-6 d-flex justify-content-center align-items-start flex-column border">
+      <Row className="mt-5">
+        <Col className="col-6 d-flex justify-content-center align-items-start flex-column">
         <h1 className="text-start text-uppercase">
          <span className="grade-title me-3">Free tools</span>for<br/>Web Developers
         </h1>
@@ -13,9 +13,9 @@ function HeroSection() {
         
       </Col>
 
-      <Col className="col-6 d-flex justify-content-center align-items-center  border">
+      <Col className="col-6 d-flex justify-content-center align-items-center">
         <Image
-          src="./hero.png" //https://www.freepik.com/free-vector/colorful-gradient-gamification-illustrated_21742931.htm#fromView=search&page=1&position=45&uuid=ee54b3db-3bbd-4a2a-bd9a-d2b299c4a1de&query=3d+web+
+          src="./heroImg2.png" //https://www.freepik.com/free-vector/colorful-gradient-gamification-illustrated_21742931.htm#fromView=search&page=1&position=45&uuid=ee54b3db-3bbd-4a2a-bd9a-d2b299c4a1de&query=3d+web+
           className="hero-img"
         />
       </Col>
