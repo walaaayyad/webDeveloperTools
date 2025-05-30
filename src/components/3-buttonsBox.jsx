@@ -7,7 +7,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
 
   return (
     <>
-    <Row className="border border-success">
+    <Row className="">
       <Col className="col-12 my-3">
         <div className="btns-box text-center">
           <Button
