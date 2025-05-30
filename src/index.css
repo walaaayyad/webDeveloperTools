@@ -70,6 +70,8 @@ h1 {
 .logoImg {
   width: 50px !important;
   height: 50px;
+  margin: auto;
+  border-radius: 50% !important;
 }
 .hero-img {
     width: 100%;
@@ -78,9 +80,13 @@ h1 {
     z-index: -1;
   }
 /*----- card -----*/
-.card {
-  
+.card-body {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
          
 /*----- Buttons -----*/         
 .btns-box button {         

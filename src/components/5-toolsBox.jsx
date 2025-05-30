@@ -23,34 +23,33 @@ function ToolsBox({ dataSectionRef }) {
   return (
     <Container fluid className="text-dark" ref={dataSectionRef}>
       <Row className="m-5">
-        {/* Display message if no data is available
+        {/* Display message if no data is available */}
         {filteredData.length === 0 ? (
-          <Col className="text-center">
+          <Col className="text-center mt-5">
             <h2>Welcome, Creative Mind! 🌟</h2>
             <p className="lead fs-4">
               Let's get started! <br /> Choose a category from the buttons to
               explore some amazing resources.
             </p>
           </Col>
-        ) : ( */}
+        ) : (
         
-          {filteredData.map((item) => (
+          filteredData.map((item) => (
             <Col xs={12} sm={6} md={4} lg={3} 
-                 className="text-center d-flex justify-content-center mb-4">
-            <Card className="card" key={item.id}>
-              <Card.Img className="logoImg" src={item.webLogo} />
+                 className="text-center">
+            <Card className="card mb-3" key={item.id}>
+              <Card.Img className="logoImg mt-3" src={item.webLogo} />
               <Card.Body>
-                <Card.Title>{item.title}</Card.Title>
+                <Card.Title className="border-bottom pb-4">{item.title}</Card.Title>
                 <Card.Text>
                   {item.desc}
                 </Card.Text>
-                <Button variant="primary" href={item.link} target="_blank">Visit &rarr;</Button>
+                <Button variant="outline-primary" href={item.link} target="_blank">Visit &rarr;</Button>
               </Card.Body>
             </Card>
             </Col>
-          ))}
-          
-        {/* )} */}
+          ))
+         )} 
       </Row>
     </Container>
   );

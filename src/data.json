@@ -4,8 +4,9 @@
     "category": "inspire",
     "title": "pinterest",
     "webLogo": "./logoImages/websiteIcon/pinterest-min.png",
-    "link": "https://www.pinterest.com/ideas/website-page-layout-design/905230495388/",
-    "desc": "Pinterest is a visual discovery engine where you can find thousands of design ideas for web pages, UI elements, and overall aesthetics. Users often share collections of inspiration boards on web design trends, color palettes, layouts, and typography. It's a fantastic resource for discovering fresh concepts and gathering ideas from a diverse range of styles."
+    "link": "https://www.pinterest.com/search/pins/?q=website%20design%20inspiration&rs=rs&source_id=rs_B9nyhVDD&eq=&etslf=6634",
+    "desc": "A visual discovery platform for exploring UI ideas, layouts, and design trends.",
+    "arDesc": "منصة لاكتشاف الأفكار البصرية في واجهات المستخدم، التخطيطات، واتجاهات التصميم."
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "title": "Awwwards",
     "webLogo": "./logoImages/websiteIcon/awwwards-min.png",
     "link": "https://www.awwwards.com",
-    "desc": "Awwwards showcases the best web designs from around the world, awarding creative and innovative websites. It’s an excellent resource for finding cutting-edge designs and new trends in web development, focusing on aesthetics, functionality, and user experience."
+    "desc": "Showcases award-winning websites that excel in design, creativity, and usability.",
+    "arDesc": "يعرض مواقع حائزة على جوائز تتميز بالإبداع، التصميم، وسهولة الاستخدام."
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "title": "CSS Design Awards ",
     "webLogo": "./logoImages/websiteIcon/cssDesign.png",
     "link": "https://cssdesignawards.com",
-    "desc": "CSS Design Awards highlights high-quality websites with outstanding designs and UI/UX. It includes a mix of minimalist, modern, and experimental designs that can inspire web developers to create something unique while maintaining functionality."
+    "desc": "A showcase of award-winning websites recognized for design, UX, and innovation.",
+    "arDesc": "معرض لمواقع إلكترونية متميزة في التصميم وتجربة المستخدم والابتكار."
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "title": "Behance",
     "webLogo": "./logoImages/websiteIcon/behance-min.png",
     "link": "https://www.behance.net",
-    "desc": "Behance is a platform for creative professionals to showcase their portfolios, including web design projects. It's a great place to explore interactive web designs, UI/UX concepts, and digital art projects. Designers from all over the world share their work, offering endless inspiration and fresh ideas for web development."
+    "desc": "A portfolio platform showcasing high-quality creative projects.",
+    "arDesc": "منصة لعرض المشاريع الإبداعية عالية الجودة في التصميم والويب."
   },
   {
     "id": 5,
@@ -37,6 +41,88 @@
     "title": "Siteinspire",
     "webLogo": "./logoImages/websiteIcon/siteinspire-min.png",
     "link": "https://www.siteinspire.com",
-    "desc": "Siteinspire offers a curated collection of the best web designs categorized by style, type, and industry. This site is great for seeing a wide variety of real-world projects across different niches, helping web developers gain insights into effective design patterns and layouts."
+    "desc": "A curated gallery of the best web and interactive design.",
+    "arDesc": "معرض منسق لأفضل التصاميم التفاعلية ومواقع الويب الحديثة."
+  },
+  {
+    "id": 6,
+    "category": "inspire",
+    "title": "Dribbble",
+    "webLogo": "./logoImages/websiteIcon/dribbble.png",
+    "link": "https://dribbble.com/",
+    "desc": "A platform to discover and share creative UI/UX and web designs.",
+    "arDesc": "منصة لاستكشاف ومشاركة تصاميم واجهات المستخدم وتجربة المستخدم."
+  },
+  {
+    "id": 7,
+    "category": "inspire",
+    "title": "One Page Love",
+    "webLogo": "./logoImages/websiteIcon/onPageLove.png",
+    "link": "https://onepagelove.com/",
+    "desc": "A resource for beautiful single-page website inspiration.",
+    "arDesc": "مصدر متخصص في إلهام تصميم المواقع ذات الصفحة الواحدة."
+  },
+  {
+    "id": 8,
+    "category": "inspire",
+    "title": "CSS Nectar",
+    "webLogo": "./logoImages/websiteIcon/cssnectar.png",
+    "link": "https://cssnectar.com/",
+    "desc": "A design gallery that rates websites based on design, code, and creativity.",
+    "arDesc": "معرض تصميم يقيم المواقع بناءً على التصميم، البرمجة، والإبداع."
+  },
+  {
+    "id": 9,
+    "category": "inspire",
+    "title": "Lapa.Ninja",
+    "webLogo": "./logoImages/websiteIcon/lapaninga.png",
+    "link": "https://www.lapa.ninja/",
+    "desc": "Features a daily updated collection of landing pages and startup sites.",
+    "arDesc": "مجموعة محدثة يوميًا من صفحات الهبوط ومواقع الشركات الناشئة."
+  },
+  {
+    "id": 10,
+    "category": "",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
+  },
+  {
+    "id": 11,
+    "category": "",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
+  },
+  {
+    "id": 12,
+    "category": "",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
+  },
+  {
+    "id": 13,
+    "category": "",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
+  },
+  {
+    "id": 14,
+    "category": "",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
   }
 ]

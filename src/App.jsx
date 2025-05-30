@@ -36,7 +36,7 @@ function App() {
         <ToolsBox dataSectionRef={dataSectionRef} />
         <Container
           fluid
-          className="border border-info"
+          className=""
         >
           {
           /*------------------------ Start Left Section 
