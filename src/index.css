@@ -126,7 +126,7 @@ h1 {
     font-size: 3em !important;
   }
   .hero-img {
-    width: 250px;
+    /* width: 250px; */
   }
 }
 @media screen and (max-width: 1000px) {
@@ -196,7 +196,9 @@ h1 {
     font-size: 2.5em !important;
   }
   .hero-img {
-    width: 250px;
+    scale: 1.2;
+    border-radius: 50%;
+    z-index: -1;
   }
   .btns-box {
     width: 95vw;

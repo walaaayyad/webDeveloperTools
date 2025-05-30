@@ -15,7 +15,7 @@ function HeroSection() {
 
       <Col className="col-6 d-flex justify-content-center align-items-center  border">
         <Image
-          src="./heroImg.png" //https://www.freepik.com/free-vector/colorful-gradient-gamification-illustrated_21742931.htm#fromView=search&page=1&position=45&uuid=ee54b3db-3bbd-4a2a-bd9a-d2b299c4a1de&query=3d+web+
+          src="./hero.png" //https://www.freepik.com/free-vector/colorful-gradient-gamification-illustrated_21742931.htm#fromView=search&page=1&position=45&uuid=ee54b3db-3bbd-4a2a-bd9a-d2b299c4a1de&query=3d+web+
           className="hero-img"
         />
       </Col>
@@ -25,3 +25,5 @@ function HeroSection() {
 }
 
 export default HeroSection;
+
+//earth img [https://www.pinterest.com/pin/70931762876102460/]
