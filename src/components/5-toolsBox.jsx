@@ -36,17 +36,24 @@ function ToolsBox({ dataSectionRef }) {
         
           filteredData.map((item) => (
             <Col xs={12} sm={6} md={4} lg={3} 
-                 className="text-center">
-            <Card className="card mb-3" key={item.id}>
-              <Card.Img className="logoImg mt-3" src={item.webLogo} />
-              <Card.Body>
-                <Card.Title className="border-bottom pb-4">{item.title}</Card.Title>
-                <Card.Text>
-                  {item.desc}
-                </Card.Text>
-                <Button variant="outline-primary" href={item.link} target="_blank">Visit &rarr;</Button>
-              </Card.Body>
-            </Card>
+                 className="text-center mt-5">
+              <Card className="custom-card shadow-sm mb-4" key={item.id}>
+                <div className="card-img-container">
+                  <Card.Img className="logoImg" src={item.webLogo} alt={`${item.title} Logo`} />
+                </div>
+                <Card.Body>
+                  <Card.Title className="card-title pb-3 mb-3">{item.title}</Card.Title>
+                  <Card.Text className="text-muted">{item.desc}</Card.Text>
+                  <Button
+                    variant="outline-primary"
+                    href={item.link}
+                    target="_blank"
+                    className="visit-btn"
+                  >
+                    Visit &rarr;
+                  </Button>
+                </Card.Body>
+              </Card>
             </Col>
           ))
          )} 
