@@ -23,9 +23,9 @@ function ButtonsBox({ handleClose, onButtonClick }) {
           </Button>
           <Button
             variant="outline-primary"
-            className={selectedCategory === "colors" ? "active" : ""}
+            className={selectedCategory === "design" ? "active" : ""}
             onClick={() => {
-              setSelectedCategory("colors");
+              setSelectedCategory("design");
               handleClose();
             }}
           >
@@ -33,9 +33,9 @@ function ButtonsBox({ handleClose, onButtonClick }) {
           </Button>
           <Button
             variant="outline-primary"
-            className={selectedCategory === "icon" ? "active" : ""}
+            className={selectedCategory === "assets" ? "active" : ""}
             onClick={() => {
-              setSelectedCategory("icon");
+              setSelectedCategory("assets");
               handleClose();
             }}
           >

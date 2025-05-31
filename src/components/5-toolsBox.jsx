@@ -22,7 +22,7 @@ function ToolsBox({ dataSectionRef }) {
 
   return (
     <Container fluid className="text-dark" ref={dataSectionRef}>
-      <Row className="m-5">
+      <Row className="justify-content-center">
         {/* Display message if no data is available */}
         {filteredData.length === 0 ? (
           <Col className="text-center mt-5">
@@ -35,7 +35,7 @@ function ToolsBox({ dataSectionRef }) {
         ) : (
         
           filteredData.map((item) => (
-            <Col xs={12} sm={6} md={4} lg={3} 
+            <Col xs={12} sm={6} md={4} lg={4} 
                  className="text-center mt-5">
               <Card className="custom-card shadow-sm mb-4" key={item.id}>
                 <div className="card-img-container">

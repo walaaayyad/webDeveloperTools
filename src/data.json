@@ -82,34 +82,124 @@
   },
   {
     "id": 10,
-    "category": "",
-    "title": "",
-    "webLogo": "./logoImages/websiteIcon/.png",
-    "link": "",
-    "desc": "",
-    "arDesc": ""
+    "category": "design",
+    "title": "Figma",
+    "webLogo": "./logoImages/websiteIcon/figma.png",
+    "link": "https://www.figma.com/",
+    "desc": "Free UI/UX design and prototyping tool with real-time collaboration in the browser.",
+    "arDesc": "أداة مجانية لتصميم واجهات المستخدم والنماذج التفاعلية، تتيح التعاون الفوري وتعمل عبر المتصفح."
   },
   {
     "id": 11,
-    "category": "",
-    "title": "",
-    "webLogo": "./logoImages/websiteIcon/.png",
-    "link": "",
-    "desc": "",
-    "arDesc": ""
+    "category": "design",
+    "title": "Canva",
+    "webLogo": "./logoImages/websiteIcon/canva.png",
+    "link": "https://www.canva.com/",
+    "desc": "Easy-to-use graphic design tool with templates, ideal for social media and web graphics.",
+    "arDesc": "أداة تصميم سهلة الاستخدام مع قوالب جاهزة، مثالية للرسومات الاجتماعية والمواقع."
   },
   {
     "id": 12,
-    "category": "",
-    "title": "",
-    "webLogo": "./logoImages/websiteIcon/.png",
-    "link": "",
-    "desc": "",
-    "arDesc": ""
+    "category": "design",
+    "title": "Photopea",
+    "webLogo": "./logoImages/websiteIcon/photopea.png",
+    "link": "https://www.photopea.com/",
+    "desc": "Free online Photoshop alternative that supports PSD files and advanced editing.",
+    "arDesc": "بديل مجاني لفوتوشوب يعمل على المتصفح، يدعم ملفات PSD ويقدم أدوات تحرير متقدمة."
   },
   {
     "id": 13,
-    "category": "",
+    "category": "design",
+    "title": "Pixlr",
+    "webLogo": "./logoImages/websiteIcon/pixlr.png",
+    "link": "https://pixlr.com/",
+    "desc": "Free browser-based photo editor with both simple and advanced tools.",
+    "arDesc": "محرر صور مجاني يعمل على المتصفح، يوفر أدوات بسيطة ومتقدمة."
+  },
+  {
+    "id": 14,
+    "category": "design",
+    "title": "Coolors",
+    "webLogo": "./logoImages/websiteIcon/coolors.png",
+    "link": "https://coolors.co/",
+    "desc": "Color palette generator for creating beautiful and harmonious color schemes.",
+    "arDesc": "مولّد لوحات ألوان يساعدك على إنشاء مخططات لونية جميلة ومتناسقة."
+  },
+  {
+    "id": 15,
+    "category": "design",
+    "title": "Adobe Color",
+    "webLogo": "./logoImages/websiteIcon/adobeColor.png",
+    "link": "https://color.adobe.com/create/color-wheel",
+    "desc": "Tool to create and explore color palettes based on theory or trends.",
+    "arDesc": "أداة من أدوبي لإنشاء واستكشاف لوحات ألوان بناءً على النظريات أو الاتجاهات."
+  },
+  {
+    "id": 16,
+    "category": "design",
+    "title": "Remove.bg",
+    "webLogo": "./logoImages/websiteIcon/removeBg.png",
+    "link": "https://www.remove.bg/upload",
+    "desc": "AI-powered tool to automatically remove backgrounds from images.",
+    "arDesc": "أداة تعتمد على الذكاء الاصطناعي لإزالة خلفيات الصور تلقائيًا."
+  },
+  {
+    "id": 17,
+    "category": "design",
+    "title": "CompressPNG",
+    "webLogo": "./logoImages/websiteIcon/compressPNG.png",
+    "link": "https://compresspng.com/",
+    "desc": "Free tool to compress PNG images without losing quality.",
+    "arDesc": "أداة مجانية لضغط صور PNG بدون فقدان الجودة."
+  },
+  {
+    "id": 18,
+    "category": "design",
+    "title": "TinyJPG",
+    "webLogo": "./logoImages/websiteIcon/tinyJPG.png",
+    "link": "https://tinyjpg.com/",
+    "desc": "Compresses JPG and PNG images efficiently to reduce file size.",
+    "arDesc": "تضغط صور JPG وPNG بشكل فعال لتقليل حجم الملفات."
+  },
+  {
+    "id": 19,
+    "category": "assets",
+    "title": "Google Fonts",
+    "webLogo": "./logoImages/websiteIcon/gFont.png",
+    "link": "https://fonts.google.com/",
+    "desc": "Free and open-source fonts library for web and graphic design.",
+    "arDesc": "مكتبة خطوط مجانية ومفتوحة المصدر لاستخدامها في التصميم والمواقع."
+  },
+  {
+    "id": 20,
+    "category": "assets",
+    "title": "Fontpair",
+    "webLogo": "./logoImages/websiteIcon/fontpair.png",
+    "link": "https://fontpair.co/",
+    "desc": "Tool that helps pair Google Fonts for good typography.",
+    "arDesc": "أداة تساعدك على تنسيق خطوط Google للحصول على طباعة مميزة."
+  },
+  {
+    "id": 21,
+    "category": "assets",
+    "title": "Feather Icons",
+    "webLogo": "./logoImages/websiteIcon/feathericons.png",
+    "link": "https://feathericons.com/",
+    "desc": "Lightweight, open-source icon set ideal for clean UI design.",
+    "arDesc": "مجموعة أيقونات خفيفة ومفتوحة المصدر، مناسبة لتصاميم الواجهات البسيطة."
+  },
+  {
+    "id": 22,
+    "category": "assets",
+    "title": "Icons8",
+    "webLogo": "./logoImages/websiteIcon/icons8.png",
+    "link": "https://icons8.com/",
+    "desc": "Free icons, photos, and music library with limited access in the free plan.",
+    "arDesc": "مكتبة مجانية تحتوي على أيقونات وصور ومقاطع صوتية، مع بعض القيود في النسخة المجانية."
+  },
+  {
+    "id": 23,
+    "category": "assets",
     "title": "",
     "webLogo": "./logoImages/websiteIcon/.png",
     "link": "",
@@ -117,8 +207,62 @@
     "arDesc": ""
   },
   {
-    "id": 14,
-    "category": "",
+    "id": 24,
+    "category": "assets",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
+  },
+  {
+    "id": 25,
+    "category": "assets",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
+  },
+  {
+    "id": 26,
+    "category": "assets",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
+  },
+  {
+    "id": 27,
+    "category": "assets",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
+  },
+  {
+    "id": 28,
+    "category": "assets",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
+  },
+  {
+    "id": 29,
+    "category": "assets",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
+  },
+  {
+    "id": 30,
+    "category": "assets",
     "title": "",
     "webLogo": "./logoImages/websiteIcon/.png",
     "link": "",
