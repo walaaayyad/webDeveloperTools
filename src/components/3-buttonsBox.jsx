@@ -43,9 +43,9 @@ function ButtonsBox({ handleClose, onButtonClick }) {
           </Button>
           <Button
             variant="outline-primary"
-            className={selectedCategory === "img" ? "active" : ""}
+            className={selectedCategory === "cssTools" ? "active" : ""}
             onClick={() => {
-              setSelectedCategory("img");
+              setSelectedCategory("cssTools");
               handleClose();
             }}
           >
@@ -53,23 +53,23 @@ function ButtonsBox({ handleClose, onButtonClick }) {
           </Button>
           <Button
             variant="outline-primary"
-            className={selectedCategory === "font" ? "active" : ""}
+            className={selectedCategory === "optimization" ? "active" : ""}
             onClick={() => {
-              setSelectedCategory("font");
+              setSelectedCategory("optimization");
               handleClose();
             }}
           >
-            JS Tools
+            Optimization
           </Button>
           <Button
             variant="outline-primary"
-            className={selectedCategory === "screenShot" ? "active" : ""}
+            className={selectedCategory === "production" ? "active" : ""}
             onClick={() => {
-              setSelectedCategory("screenShot");
+              setSelectedCategory("production");
               handleClose();
             }}
           >
-            Production Tools
+            Production
           </Button>
         </div>
       </Col>

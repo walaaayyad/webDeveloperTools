@@ -145,7 +145,7 @@
   },
   {
     "id": 17,
-    "category": "design",
+    "category": "optimization",
     "title": "CompressPNG",
     "webLogo": "./logoImages/websiteIcon/compressPNG.png",
     "link": "https://compresspng.com/",
@@ -154,12 +154,12 @@
   },
   {
     "id": 18,
-    "category": "design",
+    "category": "optimization",
     "title": "TinyJPG",
     "webLogo": "./logoImages/websiteIcon/tinyJPG.png",
     "link": "https://tinyjpg.com/",
-    "desc": "Compresses JPG and PNG images efficiently to reduce file size.",
-    "arDesc": "تضغط صور JPG وPNG بشكل فعال لتقليل حجم الملفات."
+    "desc": "Compress PNG and JPG images with minimal quality loss. Free for up to 20 images at once.",
+    "arDesc": "ضغط صور PNG وJPG بجودة ممتازة وبدون خسارة ملحوظة. مجاني حتى 20 صورة في المرة."
   },
   {
     "id": 19,
@@ -244,25 +244,241 @@
   },
   {
     "id": 28,
-    "category": "assets",
-    "title": "",
-    "webLogo": "./logoImages/websiteIcon/.png",
-    "link": "",
-    "desc": "",
-    "arDesc": ""
+    "category": "optimization",
+    "title": "Compressor.io",
+    "webLogo": "./logoImages/websiteIcon/compressorIo.png",
+    "link": "https://www.minifier.org/",
+    "desc": "Online tool for compressing JPEG, PNG, GIF, and SVG images easily.",
+    "arDesc": "أداة عبر الإنترنت لضغط صور JPEG وPNG وGIF وSVG بسهولة."
   },
   {
     "id": 29,
-    "category": "assets",
-    "title": "",
-    "webLogo": "./logoImages/websiteIcon/.png",
-    "link": "",
-    "desc": "",
-    "arDesc": ""
+    "category": "optimization",
+    "title": "Squoosh (by Google)",
+    "webLogo": "./logoImages/websiteIcon/squoosh.png",
+    "link": "https://squoosh.app/",
+    "desc": "Browser-based image compression and format converter (WebP, AVIF). Completely open-source.",
+    "arDesc": " أداة لضغط وتحويل الصور عبر المتصفح تدعم WebP وAVIF. مفتوحة المصدر ومجانية تماماً."
   },
   {
     "id": 30,
-    "category": "assets",
+    "category": "optimization",
+    "title": "Terser",
+    "webLogo": "./logoImages/websiteIcon/terser.png",
+    "link": "https://terser.org/",
+    "desc": "Open-source JavaScript minifier used in modern build systems like Webpack.",
+    "arDesc": "أداة مفتوحة المصدر لتصغير JavaScript، وتُستخدم في أنظمة مثل Webpack."
+  },
+  {
+    "id": 31,
+    "category": "optimization",
+    "title": "Minify Code",
+    "webLogo": "./logoImages/websiteIcon/minify.jpeg",
+    "link": "https://www.minifier.org/",
+    "desc": "Online tool to minify HTML, CSS, and JavaScript.",
+    "arDesc": "أداة لتصغير ملفات HTML وCSS وJavaScript عبر الإنترنت."
+  },
+  {
+    "id": 32,
+    "category": "optimization",
+    "title": "PageSpeed Insights (by Google)",
+    "webLogo": "./logoImages/websiteIcon/pagespeed.png",
+    "link": "https://pagespeed.web.dev/",
+    "desc": "Analyzes your site performance and gives optimization suggestions.",
+    "arDesc": "يحلل أداء موقعك ويعطي اقتراحات للتحسين، من تطوير Google."
+  },
+  {
+    "id": 33,
+    "category": "cssTools",
+    "title": "Animista",
+    "webLogo": "./logoImages/websiteIcon/animista.png",
+    "link": "https://animista.net/",
+    "desc": "A web-based tool for creating and customizing CSS animations.",
+    "arDesc": "أداة عبر الإنترنت لإنشاء وتخصيص الرسوم المتحركة باستخدام CSS."
+  },
+  {
+    "id": 34,
+    "category": "cssTools",
+    "title": "CSS Clip Path Maker",
+    "webLogo": "./logoImages/websiteIcon/clippy.png",
+    "link": "https://bennettfeely.com/clippy/",
+    "desc": "Create complex CSS shapes using clip-path. Visual editor with instant code export.",
+    "arDesc": " أنشئ أشكالًا معقدة باستخدام clip-path من خلال محرر مرئي مع كود جاهز."
+  },
+  {
+    "id": 35,
+    "category": "cssTools",
+    "title": "Fancy-Border-Radius",
+    "webLogo": "./logoImages/websiteIcon/fancyborder.png",
+    "link": "https://9elements.github.io/fancy-border-radius/",
+    "desc": " Interactive tool to create custom, non-uniform border-radius effects.",
+    "arDesc": " أداة تفاعلية لإنشاء تأثيرات حواف دائرية غير تقليدية."
+  },
+  {
+    "id": 36,
+    "category": "cssTools",
+    "title": "Glassmorphism Generator",
+    "webLogo": "./logoImages/websiteIcon/glasscss.png",
+    "link": "https://hype4.academy/tools/glassmorphism-generator",
+    "desc": " Generate modern glass (blurred background) UI effects with transparency and blur.",
+    "arDesc": "أداة لإنشاء تأثير الزجاج العصري مع خلفية ضبابية وشفافية."
+  },
+  {
+    "id": 37,
+    "category": "cssTools",
+    "title": "Neumorphism.io",
+    "webLogo": "./logoImages/websiteIcon/neumo.png",
+    "link": "https://neumorphism.io/#e0e0e0",
+    "desc": "Generate soft UI (neumorphic) designs with shadows and subtle gradients.",
+    "arDesc": "أداة لإنشاء تصاميم واجهة مستخدم ناعمة باستخدام الظلال والتدرجات."
+  },
+  {
+    "id": 38,
+    "category": "cssTools",
+    "title": "Get Waves",
+    "webLogo": "./logoImages/websiteIcon/getwaves.png",
+    "link": "https://getwaves.io/",
+    "desc": "Generate SVG wave shapes for headers, sections, or backgrounds. Exports SVG code.",
+    "arDesc": "أداة لإنشاء أشكال موجية لترويسات أو خلفيات، مع تصدير كود SVG."
+  },
+  {
+    "id": 39,
+    "category": "cssTools",
+    "title": "Haikei.app",
+    "webLogo": "./logoImages/websiteIcon/haikei.png",
+    "link": "https://haikei.app/",
+    "desc": "Create stunning background shapes (waves, blobs, gradients, layers). Exports SVG or CSS.",
+    "arDesc": "أنشئ خلفيات مذهلة بأشكال موجية، فقاعية، تدرجات، وطبقات مع تصدير SVG أو CSS."
+  },
+  {
+    "id": 40,
+    "category": "cssTools",
+    "title": "CSS Button Generator",
+    "webLogo": "./logoImages/websiteIcon/btngenerator.png",
+    "link": "https://css3buttongenerator.com/",
+    "desc": "Create stylish CSS3 buttons with gradients, borders, and hover effects.",
+    "arDesc": "أنشئ أزرار CSS3 أنيقة مع تدرجات وحدود وتأثيرات عند التمرير."
+  },
+  {
+    "id": 41,
+    "category": "cssTools",
+    "title": "HTML CSS Button Generator",
+    "webLogo": "./logoImages/websiteIcon/bestbtn.png",
+    "link": "https://www.bestcssbuttongenerator.com/",
+    "desc": "Customize button shapes, colors, padding, fonts, and effects with live preview.",
+    "arDesc": "خصّص الأزرار من حيث الشكل، الألوان، الهوامش، الخطوط، والتأثيرات مع معاينة مباشرة."
+  },
+  {
+    "id": 42,
+    "category": "cssTools",
+    "title": "Gradient Buttons",
+    "webLogo": "./logoImages/websiteIcon/gradbtn.png",
+    "link": "https://gradientbuttons.colorion.co/",
+    "desc": "Create beautiful gradient buttons with easy color controls and hover animations.",
+    "arDesc": "أنشئ أزرار تدرج لوني جميلة مع تحكم سهل بالألوان وتأثيرات عند التمرير."
+  },
+  {
+    "id": 43,
+    "category": "cssTools",
+    "title": "Blobmaker",
+    "webLogo": "./logoImages/websiteIcon/blobmaker.png",
+    "link": "https://www.blobmaker.app/",
+    "desc": "Create random, customizable organic blob shapes as SVG for backgrounds or masks.",
+    "arDesc": "أنشئ أشكال عضوية عشوائية وقابلة للتخصيص كـ SVG للاستخدام كخلفيات أو أقنعة."
+  },
+  {
+    "id": 44,
+    "category": "cssTools",
+    "title": "Shape Divider App",
+    "webLogo": "./logoImages/websiteIcon/shapdivider.png",
+    "link": "https://www.shapedivider.app/",
+    "desc": "Generate creative SVG shape dividers for section transitions on web pages.",
+    "arDesc": " أنشئ فواصل أشكال SVG مبتكرة لتحولات الأقسام في صفحات الويب."
+  },
+  {
+    "id": 45,
+    "category": "cssTools",
+    "title": "SVG Wave",
+    "webLogo": "./logoImages/websiteIcon/svgwave.png",
+    "link": "https://svgwave.in/",
+    "desc": "Generate smooth, customizable SVG wave shapes for headers and backgrounds.",
+    "arDesc": "أنشئ أشكال موجية ناعمة وقابلة للتخصيص كـ SVG للرؤوس والخلفيات."
+  },
+  {
+    "id": 46,
+    "category": "cssTools",
+    "title": "SVG Backgrounds",
+    "webLogo": "./logoImages/websiteIcon/svgbg.png",
+    "link": "https://www.svgbackgrounds.com/",
+    "desc": "Free customizable SVG background patterns ready to download or embed.",
+    "arDesc": "أنماط خلفيات SVG مجانية وقابلة للتخصيص للتحميل أو التضمين."
+  },
+  {
+    "id": 47,
+    "category": "production",
+    "title": "Loom",
+    "webLogo": "./logoImages/websiteIcon/loom.png",
+    "link": "https://www.loom.com/",
+    "desc": "Loom is a free (with paid plans for extra features) screen recording and video messaging tool. It lets you quickly record your screen, camera, or both, then instantly share the video via a link.",
+    "arDesc": "لوم هي أداة مجانية (مع خطط مدفوعة لمزايا إضافية) لتسجيل الشاشة وإرسال رسائل فيديو. تتيح لك تسجيل شاشتك أو الكاميرا بسرعة ومشاركة الفيديو فوراً عبر رابط."
+  },
+  {
+    "id": 48,
+    "category": "production",
+    "title": "Screen Recorder",
+    "webLogo": "./logoImages/websiteIcon/awesomeshot.png",
+    "link": "https://www.awesomescreenshot.com/",
+    "desc": "A free Chrome extension and web tool for capturing screenshots, recording your screen, annotating images/videos, and sharing them instantly.",
+    "arDesc": " إضافة مجانية لمتصفح كروم وأداة ويب لالتقاط لقطات شاشة، تسجيل الشاشة، إضافة تعليقات على الصور والفيديوهات، ومشاركتها فوراً."
+  },
+  {
+    "id": 49,
+    "category": "production",
+    "title": "Full Page Screen Capture",
+    "webLogo": "./logoImages/websiteIcon/screencapture.png",
+    "link": "https://chromewebstore.google.com/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl",
+    "desc": "A free Chrome extension designed to capture full-page screenshots of any website with just one click — no scrolling or stitching needed.",
+    "arDesc": "إضافة مجانية لمتصفح كروم تتيح التقاط لقطة شاشة كاملة لأي موقع بنقرة واحدة فقط — دون الحاجة للتمرير أو تجميع الصور."
+  },
+  {
+    "id": 50,
+    "category": "production",
+    "title": "Mobile Simulator",
+    "webLogo": "./logoImages/websiteIcon/screencapture.png",
+    "link": "https://chromewebstore.google.com/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk",
+    "desc": "Simulate various mobile devices and screen sizes directly in Chrome to test responsive designs and mobile layouts easily.",
+    "arDesc": "محاكاة أجهزة محمولة متعددة وأحجام شاشات مختلفة داخل متصفح كروم لاختبار التصميمات المتجاوبة وتخطيطات الهواتف بسهولة."
+  },
+  {
+    "id": 51,
+    "category": "production",
+    "title": "Google Drive",
+    "webLogo": "./logoImages/websiteIcon/googledrive.png",
+    "link": "https://drive.google.com/drive/u/0/home",
+    "desc": "Upload your screenshots to a folder, set permissions, and share the link with your client. Simple, secure, and ideal for organizing multiple images.",
+    "arDesc": "حمّل لقطات الشاشة داخل مجلد، ثم فعّل صلاحية العرض وشارك الرابط مع العميل. طريقة بسيطة وآمنة لتنظيم ومشاركة عدة صور."
+  },
+  {
+    "id": 52,
+    "category": "production",
+    "title": "ImgBB",
+    "webLogo": "./logoImages/websiteIcon/imgbb.png",
+    "link": "https://imgbb.com/",
+    "desc": "Upload screenshots instantly and get a direct image link to share with clients — no account needed. Fast and simple for one-off shares.",
+    "arDesc": "حمّل لقطات الشاشة فورًا واحصل على رابط مباشر للمشاركة مع العميل — بدون الحاجة لحساب. سريع ومثالي للمشاركة السريعة."
+  },
+  {
+    "id": 53,
+    "category": "production",
+    "title": "Notion",
+    "webLogo": "./logoImages/websiteIcon/notion.png",
+    "link": "https://www.notion.com/",
+    "desc": "Notion doesn't capture screenshots, but it's perfect for uploading and organizing them. You can create a clean, shareable page with sections, notes, and feedback next to each image — ideal for client review and presentation.",
+    "arDesc": "لا يقوم Notion بالتقاط لقطات الشاشة، لكنه مثالي لرفعها وتنظيمها في صفحة نظيفة ومنسقة. يمكنك إنشاء صفحة تحتوي على ملاحظات، تقسيمات، وتعليقات بجانب كل صورة — مثالي لعرض العمل على العميل."
+  },
+  {
+    "id": 54,
+    "category": "",
     "title": "",
     "webLogo": "./logoImages/websiteIcon/.png",
     "link": "",
@@ -270,8 +486,17 @@
     "arDesc": ""
   },
   {
-    "id": 31,
-    "category": "assets",
+    "id": 55,
+    "category": "",
+    "title": "",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "",
+    "desc": "",
+    "arDesc": ""
+  },
+  {
+    "id": 56,
+    "category": "",
     "title": "",
     "webLogo": "./logoImages/websiteIcon/.png",
     "link": "",
