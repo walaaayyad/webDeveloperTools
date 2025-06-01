@@ -191,31 +191,38 @@ h1 {
   .website-img {
     width: 50%;
   }
+   .bg-circle {
+    z-index: 0;
+  }
+  .hero-img {
+    scale: 1;
+   
+  }
 }
 @media screen and (max-width: 900px) {
   .hero-section {
-    height: auto;
+    /* height: auto;
     background-attachment: fixed;
     background-size: contain;
-    background-color: #9cc3f5;
+    background-color: #9cc3f5; */
   }
   .pt-5 {
     padding-top: 0rem !important;
   }
-  .hero-left-section {
+  /* .hero-left-section {
     display: flex;
     align-items: center;
   }
   .hero-right-section {
     margin-bottom: 50px;
-  }
+  } */
   .btns-box button {
     width: 230px;
   }
-  .website-img {
+  /* .website-img {
     width: 80%;
     height: 80%;
-  }
+  } */
 }
 
 /* offCanvas model */
@@ -235,12 +242,13 @@ h1 {
     margin-top: -1em;
     margin-left: -2em;
   }
-  .hero-left-section {
+  /* .hero-left-section {
     height: auto;
     align-items: flex-start;
-  }
+  } */
+
   .hero-right-section {
-    height: 50rem;
+    /* height: 50rem; */
     /* padding-bottom: 2.5rem;
     margin-bottom: 1rem !important; */
   }
@@ -253,11 +261,7 @@ h1 {
   h1 {
     font-size: 2.5em !important;
   }
-  .hero-img {
-    /* scale: 1.2;
-    border-radius: 50%;
-    z-index: -1; */
-  }
+
   .btns-box {
     width: 95vw;
   }
