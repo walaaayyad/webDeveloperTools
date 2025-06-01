@@ -21,7 +21,7 @@ function ToolsBox({ dataSectionRef }) {
   );
 
   return (
-    <Container fluid className="text-dark" ref={dataSectionRef}>
+    <Container fluid className="text-dark pb-5" ref={dataSectionRef}>
       <Row className="justify-content-center">
         {/* Display message if no data is available */}
         {filteredData.length === 0 ? (

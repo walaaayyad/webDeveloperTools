@@ -7,6 +7,7 @@ import NavBar from "./components/1-navBar";
 import Hero from "./components/2-heroSection";
 import ButtonsBox from "./components/3-buttonsBox";
 import ToolsBox from "./components/5-toolsBox";
+import Footer from "./components/6-footer";
 import OffCanvas from "./components/4-offCanvas";
 import { ButtonProvider } from "./ButtonContext"; // Import the provider
 
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <ButtonProvider>
-      <Container className="hero-section pt-5">
+      {/* <Container className="border border-danger"> */}
         <div className="bg-circle bg-left-circle"></div>
         <div className="bg-circle bg-right-circle"></div>
         {/* <div className="bg-circle bg-middle-circle"></div> */}
@@ -34,10 +35,11 @@ function App() {
         <Hero />
         <ButtonsBox />
         <ToolsBox dataSectionRef={dataSectionRef} />
-        <Container
+        <Footer/>
+        {/* <Container
           fluid
           className=""
-        >
+        > */}
           {
           /*------------------------ Start Left Section 
           <Col className="hero-left-section col-sm-12 col-md-12 col-lg-3 border">
@@ -54,8 +56,8 @@ function App() {
             <ToolsBox dataSectionRef={dataSectionRef} />
           </Col> */}
           {/* End Right Section */}
-        </Container>
-      </Container>
+        {/* </Container> */}
+      {/* </Container> */}
     </ButtonProvider>
   );
 }
