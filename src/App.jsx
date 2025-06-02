@@ -1,5 +1,5 @@
 // App.js
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
@@ -10,8 +10,17 @@ import ToolsBox from "./components/5-toolsBox";
 import Footer from "./components/6-footer";
 import OffCanvas from "./components/4-offCanvas";
 import { ButtonProvider } from "./ButtonContext"; // Import the provider
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   // Create a reference to the data section (child component)
   const dataSectionRef = useRef(null);
 
@@ -33,7 +42,7 @@ function App() {
         {/* <div className="bg-circle bg-middle-circle"></div> */}
         <NavBar />
         <Hero />
-        <ButtonsBox />
+        <ButtonsBox/>
         <ToolsBox dataSectionRef={dataSectionRef} />
         <Footer/>
         {/* <OffCanvas onButtonClick={handleScrollToData} />  */}

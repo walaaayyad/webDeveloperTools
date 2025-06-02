@@ -1,13 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Container, Row, Col, Button } from "react-bootstrap";
 import { useButtonContext } from "../ButtonContext"; // Import the custom hook to access the context
+import AOS from 'aos';
 
 function ButtonsBox({ handleClose, onButtonClick }) {
+  useEffect(() => {
+    AOS.refresh(); // Recalculate AOS positions if dynamic content is used
+  }, []);
+
   const { selectedCategory, setSelectedCategory } = useButtonContext(); // Get shared state
 
   return (
     <>
-      <Container>
+      <Container className="" data-aos="fade-up" data-aos-duration="2000">
         <Row className="mt-5">
           <Col className="col-12 my-3">
             <div className="btns-box text-center">

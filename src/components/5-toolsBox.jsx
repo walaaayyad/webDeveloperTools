@@ -1,11 +1,17 @@
+import React, {useEffect} from "react";
 import { titleDesc } from "../components/sectionsTitle";
 import { useButtonContext } from "../ButtonContext"; // Import the custom hook to access the context
 import data from "../data.json";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Container, Row, Col } from "react-bootstrap";
+import AOS from 'aos';
 
 function ToolsBox({ dataSectionRef }) {
+  useEffect(() => {
+    AOS.refresh(); // Recalculate AOS positions if dynamic content is used
+  }, []);
+
   const { selectedCategory } = useButtonContext(); // Access shared state
 
   // Get the description for the selected category
@@ -19,11 +25,12 @@ function ToolsBox({ dataSectionRef }) {
   );
 
   return (
-    <Container className="text-dark pb-5" ref={dataSectionRef}>
+    <Container className="text-dark pb-5" ref={dataSectionRef} data-aos="fade-up" data-aos-duration="2000">
       <Row className="justify-content-center">
         {/* Show title/description if category is selected */}
         {currentTitleDesc && (
-          <Col xs={12} className="text-center mt-4">
+          <Col xs={12} 
+          className="text-center mt-4">
             <h2>{currentTitleDesc.title}</h2>
             <p className="lead fs-4 mx-auto section-title">{currentTitleDesc.desc}</p>
           </Col>
@@ -31,7 +38,9 @@ function ToolsBox({ dataSectionRef }) {
 
         {/* Display message if no data is available */}
         {filteredData.length === 0 ? (
-          <Col className="text-center mt-5">
+          <Col 
+            className="text-center mt-5" 
+            >
             <h2>Welcome, Creative Mind! 🌟</h2>
             <p className="lead fs-4">
               Let's get started! <br /> Choose a category from the buttons to
@@ -41,7 +50,7 @@ function ToolsBox({ dataSectionRef }) {
         ) : (
           filteredData.map((item) => (
             <Col xs={12} sm={6} md={4} lg={4} className="text-center mt-5" key={item.id}>
-              <Card className="custom-card shadow-sm mb-4">
+              <Card className="custom-card shadow-sm mb-4" data-aos="zoom-in-up">
                 <div className="card-img-container">
                   <Card.Img className="logoImg" src={item.webLogo} alt={`${item.title} Logo`} />
                 </div>

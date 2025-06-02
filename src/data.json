@@ -290,11 +290,11 @@
   {
     "id": 33,
     "category": "cssTools",
-    "title": "Animista",
-    "webLogo": "./logoImages/websiteIcon/animista.png",
-    "link": "https://animista.net/",
-    "desc": "A web-based tool for creating and customizing CSS animations.",
-    "arDesc": "أداة عبر الإنترنت لإنشاء وتخصيص الرسوم المتحركة باستخدام CSS."
+    "title": "AOS Animation",
+    "webLogo": "./logoImages/websiteIcon/.png",
+    "link": "https://michalsnik.github.io/aos/",
+    "desc": "",
+    "arDesc": ""
   },
   {
     "id": 34,
@@ -478,12 +478,12 @@
   },
   {
     "id": 54,
-    "category": "",
-    "title": "",
-    "webLogo": "./logoImages/websiteIcon/.png",
-    "link": "",
-    "desc": "",
-    "arDesc": ""
+    "category": "cssTools",
+    "title": "Animista",
+    "webLogo": "./logoImages/websiteIcon/animista.png",
+    "link": "https://animista.net/",
+    "desc": "A web-based tool for creating and customizing CSS animations.",
+    "arDesc": "أداة عبر الإنترنت لإنشاء وتخصيص الرسوم المتحركة باستخدام CSS."
   },
   {
     "id": 55,
