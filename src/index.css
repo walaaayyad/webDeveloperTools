@@ -169,6 +169,9 @@ h1 {
 .btn-outline-primary {
   --bs-btn-border-color: unset !important;
 }
+.section-title {
+  width: 60%;
+}
 /* .link_btn {
   color: #760303 !important;
   display:  block !important;

@@ -25,7 +25,7 @@ function ToolsBox({ dataSectionRef }) {
         {currentTitleDesc && (
           <Col xs={12} className="text-center mt-4">
             <h2>{currentTitleDesc.title}</h2>
-            <p className="lead fs-4">{currentTitleDesc.desc}</p>
+            <p className="lead fs-4 mx-auto section-title">{currentTitleDesc.desc}</p>
           </Col>
         )}
 
