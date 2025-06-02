@@ -1,19 +1,17 @@
-import { useState } from "react";
+import { titleDesc } from "../components/sectionsTitle";
 import { useButtonContext } from "../ButtonContext"; // Import the custom hook to access the context
 import data from "../data.json";
-import Carousel from "react-bootstrap/Carousel";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Container, Row, Image, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 function ToolsBox({ dataSectionRef }) {
   const { selectedCategory } = useButtonContext(); // Access shared state
-  const [index, setIndex] = useState(0); // State to manage the carousel index
 
-  // Handle carousel item select
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
+  // Get the description for the selected category
+  const currentTitleDesc = titleDesc.find(
+    (item) => item.cate === selectedCategory
+  );
 
   // Filter data based on the selected category
   const filteredData = data.filter(
@@ -23,6 +21,14 @@ function ToolsBox({ dataSectionRef }) {
   return (
     <Container className="text-dark pb-5" ref={dataSectionRef}>
       <Row className="justify-content-center">
+        {/* Show title/description if category is selected */}
+        {currentTitleDesc && (
+          <Col xs={12} className="text-center mt-4">
+            <h2>{currentTitleDesc.title}</h2>
+            <p className="lead fs-4">{currentTitleDesc.desc}</p>
+          </Col>
+        )}
+
         {/* Display message if no data is available */}
         {filteredData.length === 0 ? (
           <Col className="text-center mt-5">
@@ -33,11 +39,9 @@ function ToolsBox({ dataSectionRef }) {
             </p>
           </Col>
         ) : (
-        
           filteredData.map((item) => (
-            <Col xs={12} sm={6} md={4} lg={4} 
-                 className="text-center mt-5">
-              <Card className="custom-card shadow-sm mb-4" key={item.id}>
+            <Col xs={12} sm={6} md={4} lg={4} className="text-center mt-5" key={item.id}>
+              <Card className="custom-card shadow-sm mb-4">
                 <div className="card-img-container">
                   <Card.Img className="logoImg" src={item.webLogo} alt={`${item.title} Logo`} />
                 </div>
@@ -56,7 +60,7 @@ function ToolsBox({ dataSectionRef }) {
               </Card>
             </Col>
           ))
-         )} 
+        )}
       </Row>
     </Container>
   );

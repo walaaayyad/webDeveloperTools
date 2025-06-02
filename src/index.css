@@ -153,11 +153,18 @@ h1 {
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
 }
-.btns-box button:hover,
-.btns-box button:active {
+.btns-box button:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+/* .btn.active {
+  background-color: unset;
+  border: unset;
+} */
+.btns-box button.active {
+  border: 1px solid #021B79 !important;
+  background-image: linear-gradient(135deg, #3a7bd5 0%,#36e3ef 35%, #a78ddc 51%, #36e3ef 100%);
 }
 .btn-outline-primary {
   --bs-btn-border-color: unset !important;

@@ -36,28 +36,8 @@ function App() {
         <ButtonsBox />
         <ToolsBox dataSectionRef={dataSectionRef} />
         <Footer/>
-        {/* <Container
-          fluid
-          className=""
-        > */}
-          {
-          /*------------------------ Start Left Section 
-          <Col className="hero-left-section col-sm-12 col-md-12 col-lg-3 border">
-            <Container fluid>
-                
-                <ButtonsBox /> 
-                <OffCanvas onButtonClick={handleScrollToData} /> 
-            </Container>
-          </Col>
-          ------------------------- End Left Section */}
-
-          {/* Start Right Section */}
-          {/* <Col className="hero-right-section text-center mt-5 col-12 col-sm-12 col-md-12 col-lg-9 glass-bg d-flex align-items-center justify-content-center">
-            <ToolsBox dataSectionRef={dataSectionRef} />
-          </Col> */}
-          {/* End Right Section */}
-        {/* </Container> */}
-      {/* </Container> */}
+        {/* <OffCanvas onButtonClick={handleScrollToData} />  */}
+       
     </ButtonProvider>
   );
 }

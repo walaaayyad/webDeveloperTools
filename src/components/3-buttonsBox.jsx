@@ -8,7 +8,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
   return (
     <>
       <Container>
-        <Row className="">
+        <Row className="mt-5">
           <Col className="col-12 my-3">
             <div className="btns-box text-center">
               <Button
@@ -16,8 +16,8 @@ function ButtonsBox({ handleClose, onButtonClick }) {
                 className={selectedCategory === "inspire" ? "active" : ""}
                 onClick={() => {
                   setSelectedCategory("inspire"); // Update shared state
-                  handleClose();
-                  onButtonClick();
+                  handleClose;
+                  onButtonClick;
                 }}
               >
                 Inspiration
@@ -27,7 +27,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
                 className={selectedCategory === "design" ? "active" : ""}
                 onClick={() => {
                   setSelectedCategory("design");
-                  handleClose();
+                  handleClose;
                 }}
               >
                 Design
@@ -37,7 +37,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
                 className={selectedCategory === "assets" ? "active" : ""}
                 onClick={() => {
                   setSelectedCategory("assets");
-                  handleClose();
+                  handleClose;
                 }}
               >
                 Assets
@@ -47,7 +47,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
                 className={selectedCategory === "cssTools" ? "active" : ""}
                 onClick={() => {
                   setSelectedCategory("cssTools");
-                  handleClose();
+                  handleClose;
                 }}
               >
                 CSS Tools
@@ -57,7 +57,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
                 className={selectedCategory === "optimization" ? "active" : ""}
                 onClick={() => {
                   setSelectedCategory("optimization");
-                  handleClose();
+                  handleClose;
                 }}
               >
                 Optimization
@@ -67,7 +67,7 @@ function ButtonsBox({ handleClose, onButtonClick }) {
                 className={selectedCategory === "production" ? "active" : ""}
                 onClick={() => {
                   setSelectedCategory("production");
-                  handleClose();
+                  handleClose;
                 }}
               >
                 Production
