@@ -9,7 +9,7 @@ function ButtonsBox({ onClick }) {
   }, []);
 
   const { selectedCategory, setSelectedCategory } = useButtonContext(); // Get shared state
-
+  const btnName = ["inspire","design","assets","cssTools","optimization","production"];
   return (
     <>
       <Container className="" data-aos="fade-up" data-aos-duration="2000">

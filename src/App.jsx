@@ -1,5 +1,5 @@
 // App.js
-import React, { useEffect } from "react";
+import React, { useRef,useEffect } from "react";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
@@ -21,13 +21,14 @@ useEffect(() => {
     });
   }, []);  
 
-  // Scroll to the data section
-  const handleClick = () => {
-    console.log('click works');
-    // Scroll to a known Y-position (where your target will appear)
-    window.scrollTo({ top: 1000, behavior: 'smooth' });
+  // Scroll to the target [Toolos Container]
+  const targetRef = useRef(null);
+  const scrollToTarget = () => {
+    if (targetRef.current) {
+      targetRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
-console.log(window.scrollY);
+
   return (
     <ButtonProvider>
       {/* <Container className="border border-danger"> */}
@@ -36,8 +37,8 @@ console.log(window.scrollY);
         {/* <div className="bg-circle bg-middle-circle"></div> */}
         <NavBar />
         <Hero />
-        <ButtonsBox onClick={handleClick}/>
-        <ToolsBox/>
+        <ButtonsBox onClick={scrollToTarget}/>
+        <ToolsBox targetRef={targetRef}/>
         <Footer/>
         {/* <OffCanvas onButtonClick={handleScrollToData} />  */}
        
