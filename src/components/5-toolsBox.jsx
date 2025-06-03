@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import { Container, Row, Col } from "react-bootstrap";
 import AOS from 'aos';
 
-function ToolsBox({ dataSectionRef }) {
+function ToolsBox() {
   useEffect(() => {
     AOS.refresh(); // Recalculate AOS positions if dynamic content is used
   }, []);
@@ -25,7 +25,7 @@ function ToolsBox({ dataSectionRef }) {
   );
 
   return (
-    <Container className="text-dark pb-5" ref={dataSectionRef} data-aos="fade-up" data-aos-duration="2000">
+    <Container id="tools" className="text-dark pb-5" data-aos="fade-up" data-aos-duration="2000">
       <Row className="justify-content-center">
         {/* Show title/description if category is selected */}
         {currentTitleDesc && (

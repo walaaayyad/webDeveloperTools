@@ -1,5 +1,5 @@
 // App.js
-import React, { useRef, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
@@ -14,26 +14,20 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
-  useEffect(() => {
+useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
     });
-  }, []);
-
-  // Create a reference to the data section (child component)
-  const dataSectionRef = useRef(null);
+  }, []);  
 
   // Scroll to the data section
-  const handleScrollToData = () => {
-    if (dataSectionRef.current) {
-      dataSectionRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
+  const handleClick = () => {
+    console.log('click works');
+    // Scroll to a known Y-position (where your target will appear)
+    window.scrollTo({ top: 1000, behavior: 'smooth' });
   };
-
+console.log(window.scrollY);
   return (
     <ButtonProvider>
       {/* <Container className="border border-danger"> */}
@@ -42,8 +36,8 @@ function App() {
         {/* <div className="bg-circle bg-middle-circle"></div> */}
         <NavBar />
         <Hero />
-        <ButtonsBox/>
-        <ToolsBox dataSectionRef={dataSectionRef} />
+        <ButtonsBox onClick={handleClick}/>
+        <ToolsBox/>
         <Footer/>
         {/* <OffCanvas onButtonClick={handleScrollToData} />  */}
        

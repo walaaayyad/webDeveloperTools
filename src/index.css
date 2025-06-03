@@ -307,6 +307,10 @@ h1 {
     margin-bottom: 1rem;
     padding: 1rem;
   }
+
+  .section-title {
+    width: 100%;
+  }
 }
 
 /*

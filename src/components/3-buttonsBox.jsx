@@ -3,7 +3,7 @@ import {Container, Row, Col, Button } from "react-bootstrap";
 import { useButtonContext } from "../ButtonContext"; // Import the custom hook to access the context
 import AOS from 'aos';
 
-function ButtonsBox({ handleClose, onButtonClick }) {
+function ButtonsBox({ onClick }) {
   useEffect(() => {
     AOS.refresh(); // Recalculate AOS positions if dynamic content is used
   }, []);
@@ -18,11 +18,10 @@ function ButtonsBox({ handleClose, onButtonClick }) {
             <div className="btns-box text-center">
               <Button
                 variant="outline-primary"
-                className={selectedCategory === "inspire" ? "active" : ""}
+                className={selectedCategory === "inspire" ? "active" : ""}               
                 onClick={() => {
-                  setSelectedCategory("inspire"); // Update shared state
-                  handleClose;
-                  onButtonClick;
+                  onClick();
+                  setSelectedCategory("inspire"); 
                 }}
               >
                 Inspiration
@@ -31,8 +30,8 @@ function ButtonsBox({ handleClose, onButtonClick }) {
                 variant="outline-primary"
                 className={selectedCategory === "design" ? "active" : ""}
                 onClick={() => {
+                  onClick();
                   setSelectedCategory("design");
-                  handleClose;
                 }}
               >
                 Design
@@ -41,8 +40,8 @@ function ButtonsBox({ handleClose, onButtonClick }) {
                 variant="outline-primary"
                 className={selectedCategory === "assets" ? "active" : ""}
                 onClick={() => {
+                  onClick();
                   setSelectedCategory("assets");
-                  handleClose;
                 }}
               >
                 Assets
@@ -51,8 +50,9 @@ function ButtonsBox({ handleClose, onButtonClick }) {
                 variant="outline-primary"
                 className={selectedCategory === "cssTools" ? "active" : ""}
                 onClick={() => {
+                  onClick();
                   setSelectedCategory("cssTools");
-                  handleClose;
+
                 }}
               >
                 CSS Tools
@@ -61,8 +61,9 @@ function ButtonsBox({ handleClose, onButtonClick }) {
                 variant="outline-primary"
                 className={selectedCategory === "optimization" ? "active" : ""}
                 onClick={() => {
+                  onClick();
                   setSelectedCategory("optimization");
-                  handleClose;
+
                 }}
               >
                 Optimization
@@ -71,8 +72,8 @@ function ButtonsBox({ handleClose, onButtonClick }) {
                 variant="outline-primary"
                 className={selectedCategory === "production" ? "active" : ""}
                 onClick={() => {
+                  onClick();
                   setSelectedCategory("production");
-                  handleClose;
                 }}
               >
                 Production
