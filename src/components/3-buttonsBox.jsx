@@ -10,7 +10,7 @@ function ButtonsBox({ onClick }) {
   }, []);
 
   const { selectedCategory, setSelectedCategory } = useButtonContext(); // Get shared state
-  const { t } = useTranslation();
+  const { t } = useTranslation(); // For translation
   const btnKeys = ['inspire','design','assets','cssTools','optimization','production'];
   return (
     <>

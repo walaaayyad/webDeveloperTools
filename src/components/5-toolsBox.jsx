@@ -6,6 +6,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Container, Row, Col } from "react-bootstrap";
 import AOS from 'aos';
+import { useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next'; // To use <br/> inside text
 
 function ToolsBox({ targetRef }) {
   useEffect(() => {
@@ -13,6 +15,11 @@ function ToolsBox({ targetRef }) {
   }, []);
 
   const { selectedCategory } = useButtonContext(); // Access shared state
+  // Switch between English & Arabic
+  const { t } = useTranslation(); 
+  // Change language for imported data
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language;
 
   // Get the description for the selected category
   const currentTitleDesc = titleDesc.find(
@@ -42,10 +49,9 @@ function ToolsBox({ targetRef }) {
           <Col 
             className="text-center" 
             >
-            <h2>Welcome, Creative Mind! 🌟</h2>
+            <h2>{t('toolBoxInitTitle')}</h2>
             <p className="lead fs-4">
-              Let's get started! <br /> Choose a category from the buttons to
-              explore some amazing resources.
+              <Trans i18nKey='toolBoxParagraph' components={{ br: <br /> }} />
             </p>
           </Col>
         ) : (
@@ -57,7 +63,7 @@ function ToolsBox({ targetRef }) {
                 </div>
                 <Card.Body>
                   <Card.Title className="card-title pb-3 mb-3">{item.title}</Card.Title>
-                  <Card.Text className="text-muted">{item.desc}</Card.Text>
+                  <Card.Text className="text-muted">{currentLang === 'ar' ? item.arDesc : item.desc}</Card.Text>
                   <Button
                     variant="outline-primary"
                     href={item.link}

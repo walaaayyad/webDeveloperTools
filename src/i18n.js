@@ -20,7 +20,9 @@ i18n
             "cssTools": "CSS Tools",
             "optimization": "Optimization",
             "production": "Production"
-          }
+          },
+          toolBoxInitTitle: 'Welcome, Creative Mind! 🌟',
+          toolBoxParagraph: "Let's get started! <br /> Choose a category from the buttons to explore some amazing resources."
         },
       },
       ar: {
@@ -35,7 +37,9 @@ i18n
             "cssTools": "CSS أدوات",
             "optimization": "تحسين",
             "production": "إنتاج"
-          }
+          },
+          toolBoxInitTitle: '🌟 أهلًا بك، أيها المبدع',
+          toolBoxParagraph: '  لنبدأ الآن<br />اختر فئة من الأزرار لاستكشاف بعض الادوات الرائعة'
         },
       },
     },

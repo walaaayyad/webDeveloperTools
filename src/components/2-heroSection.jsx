@@ -2,14 +2,14 @@ import React, {useEffect} from "react";
 import {Container, Row, Col, Image } from "react-bootstrap";
 import AOS from 'aos';
 import { useTranslation } from 'react-i18next';
-import { Trans } from 'react-i18next';
+import { Trans } from 'react-i18next'; // To use <br/> inside text
 
 function HeroSection() {
   useEffect(() => {
     AOS.refresh(); // Recalculate AOS positions if dynamic content is used
   }, []);
 
-  const { t } = useTranslation();
+  const { t } = useTranslation(); // For translation
 
   return (
     <>

@@ -19,18 +19,18 @@ function NavBar() {
       <Navbar
         expand="lg"
         fixed="top"
-        className="bg-body-transparent border-bottom border-dark"
+        className="bg-body-transparent"
       >
-        <Container className="ms-5 pt-2">
+        <Container className="ms-5">
           <Navbar.Brand href="#">
-            {/* <img
-              src="./logoImages/logo.png"
-              width="200"
-              height="70"
+            <img
+              src="./logo.png"
+              width="60"
+              height="50"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
-            /> */}
-            <p className="lead fw-bold">WEB TOOLS</p>
+            />
+            {/* <p className="lead fw-bold">WEB TOOLS</p> */}
           </Navbar.Brand>
           {/* Switch-button for languages */}
           <Form>

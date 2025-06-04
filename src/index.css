@@ -10,6 +10,13 @@ body {
   overflow-x: hidden;
   /* background-color: #9cc3f5 !important; */
 }
+.navbar {
+  background: rgba(232, 241, 243, 0.4);
+/* box-shadow: 0 3px 4px 3 rgba( 31, 38, 135, 0.6 ); */
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 .navbar p {
   font-family: "Agdasima", sans-serif;
   font-weight: 400;
@@ -165,7 +172,7 @@ h1 {
   --bs-btn-border-color: unset !important;
 }
 #target {
-  height: 60px;
+  height: 70px;
 }
 .section-title {
   width: 60%;
