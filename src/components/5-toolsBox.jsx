@@ -25,12 +25,13 @@ function ToolsBox({ targetRef }) {
   );
 
   return (
-    <Container ref={targetRef} className="text-dark pb-5" data-aos="fade-up" data-aos-duration="2000">
+    <Container className="text-dark pb-5" data-aos="fade-up" data-aos-duration="2000">
+      <div id="target" className="" ref={targetRef}></div>
       <Row className="justify-content-center">
         {/* Show title/description if category is selected */}
         {currentTitleDesc && (
           <Col xs={12} 
-          className="text-center mt-4">
+          className="text-center">
             <h2>{currentTitleDesc.title}</h2>
             <p className="lead fs-4 mx-auto section-title">{currentTitleDesc.desc}</p>
           </Col>
@@ -39,7 +40,7 @@ function ToolsBox({ targetRef }) {
         {/* Display message if no data is available */}
         {filteredData.length === 0 ? (
           <Col 
-            className="text-center mt-5" 
+            className="text-center" 
             >
             <h2>Welcome, Creative Mind! 🌟</h2>
             <p className="lead fs-4">

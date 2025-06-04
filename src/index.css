@@ -158,39 +158,19 @@ h1 {
   color: #fff;
   text-decoration: none;
 }
-/* .btn.active {
-  background-color: unset;
-  border: unset;
-} */
 .btns-box button.active {
-  border: 1px solid #021B79 !important;
   background-image: linear-gradient(135deg, #3a7bd5 0%,#36e3ef 35%, #a78ddc 51%, #36e3ef 100%);
 }
 .btn-outline-primary {
   --bs-btn-border-color: unset !important;
 }
+#target {
+  height: 60px;
+}
 .section-title {
   width: 60%;
 }
-/* .link_btn {
-  color: #760303 !important;
-  display:  block !important;
-} */
-/* .link_btn:hover {
-  background-color: #f2f6f987 !important;
-} */
-/*----- Carousel -----*/
-/* .carousel-caption {
-  position: unset !important;
-}
-.carousel-caption img {
-  border-radius: 10px;
-} */
-/* .website-img {
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-} */
+
 /*---- footer ----*/
 .footer {
   background-color: #021B79;
@@ -212,43 +192,27 @@ h1 {
     z-index: 0;
   }
   .hero-img {
-    scale: 1;
-   
+    scale: 1;  
   }
 }
 @media screen and (max-width: 900px) {
   .hero-section {
     margin-top: 100px;
-    /* height: auto;
-    background-attachment: fixed;
-    background-size: contain;
-    background-color: #9cc3f5; */
   }
   .pt-5 {
     padding-top: 0rem !important;
   }
-  /* .hero-left-section {
-    display: flex;
-    align-items: center;
-  }
-  .hero-right-section {
-    margin-bottom: 50px;
-  } */
   .btns-box button {
     width: 230px;
   }
-  /* .website-img {
-    width: 80%;
-    height: 80%;
-  } */
 }
 
 /* offCanvas model */
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
   .offcanvas-md {
     --bs-offcanvas-transition: transform 1s ease-in-out !important;
   }
-}
+} */
 
 @media screen and (max-width: 576px) {
   .navbar {
@@ -260,11 +224,6 @@ h1 {
     margin-top: -1em;
     margin-left: -2em;
   }
-  /* .hero-left-section {
-    height: auto;
-    align-items: flex-start;
-  } */
-
   .hero-right-section {
     /* height: 50rem; */
     /* padding-bottom: 2.5rem;
@@ -273,9 +232,6 @@ h1 {
   .lead {
     font-size: unset !important ;
   }
-  /* .flex-sm-column-reverse {
-    flex-direction: column-reverse !important;
-  } */
   h1 {
     font-size: 2.5em !important;
   }
@@ -286,28 +242,6 @@ h1 {
   .btns-box button {
     font-size: 0.8em;
   }
-
-  /* Carousel */
-  .website-img {
-    width: 90%;
-    height: 15rem;
-  }
-  .carousel-control-prev {
-    left: -1.2rem !important;
-  }
-  .carousel-control-next {
-    right: -1.2rem !important;
-  }
-  .carousel-indicators {
-    bottom: -2em !important;
-    margin-bottom: 0.2rem !important;
-  }
-  .carousel-item p {
-    height: 15rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
-  }
-
   .section-title {
     width: 100%;
   }

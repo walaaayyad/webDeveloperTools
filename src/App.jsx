@@ -8,10 +8,12 @@ import Hero from "./components/2-heroSection";
 import ButtonsBox from "./components/3-buttonsBox";
 import ToolsBox from "./components/5-toolsBox";
 import Footer from "./components/6-footer";
-import OffCanvas from "./components/4-offCanvas";
+// import OffCanvas from "./components/4-offCanvas";
 import { ButtonProvider } from "./ButtonContext"; // Import the provider
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './i18n';
+
 
 function App() {
 useEffect(() => {
@@ -31,17 +33,13 @@ useEffect(() => {
 
   return (
     <ButtonProvider>
-      {/* <Container className="border border-danger"> */}
         <div className="bg-circle bg-left-circle"></div>
         <div className="bg-circle bg-right-circle"></div>
-        {/* <div className="bg-circle bg-middle-circle"></div> */}
         <NavBar />
         <Hero />
         <ButtonsBox onClick={scrollToTarget}/>
         <ToolsBox targetRef={targetRef}/>
-        <Footer/>
-        {/* <OffCanvas onButtonClick={handleScrollToData} />  */}
-       
+        <Footer/>    
     </ButtonProvider>
   );
 }
