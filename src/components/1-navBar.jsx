@@ -21,14 +21,12 @@ function NavBar() {
         fixed="top"
         className="bg-body-transparent"
       >
-        <Container className="ms-5">
+        <Container fluid className="mx-5">
           <Navbar.Brand href="#">
             <img
               src="./logo.png"
-              width="60"
-              height="50"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
+              className="logo d-inline-block align-top"
+              alt="logo"
             />
             {/* <p className="lead fw-bold">WEB TOOLS</p> */}
           </Navbar.Brand>

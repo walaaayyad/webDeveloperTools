@@ -1,4 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+/*
+1- General
+2- Navbar
+3- Background blure circles
+4- Hero Section
+5- Images
+6- Tools card
+7- Buttons
+8- ToolsBox
+9- Footer
+10- Responsive
+*/
+
+
+
+
+
+/*----- 1- General -----*/
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -10,18 +28,28 @@ body {
   overflow-x: hidden;
   /* background-color: #9cc3f5 !important; */
 }
+
+/*----- 2- Navbar -----*/
 .navbar {
-  background: rgba(232, 241, 243, 0.4);
-/* box-shadow: 0 3px 4px 3 rgba( 31, 38, 135, 0.6 ); */
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  height: 90px;
+  background: rgb(153 207 238 / 39%);
+  /* box-shadow: 0 3px 4px 3 rgba( 31, 38, 135, 0.6 ); */
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .navbar p {
   font-family: "Agdasima", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+.logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+}
+/*----- 3- Background blure circles -----*/
 .bg-circle {
   width: 500px;
   height: 400px;
@@ -48,53 +76,29 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   z-index: 1;
 } 
 
-/*----- Hero Section -----*/
+/*----- 4- Hero Section -----*/
 .hero-section {
   margin-top: 150px;
-  /* height: 100vh; */
-  /* background-image: url("../public/background.jpg")
-    /*<a href="https://www.freepik.com/free-vector/3d-graphic-design-concept-pastel-colors_6209947.htm?log-in=google#fromView=image_search_similar&page=1&position=1&uuid=fecfd501-5c26-40be-aedf-35737226d0f8&query=3d+ai+computer">Image by pikisuperstar on Freepik</a>*;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
-}
-.hero-left-section {
-}
-.hero-right-section {
-  height: 50vh;
 }
 h1 {
   font-family: "Agdasima", sans-serif;
   font-weight: 700 !important;
   font-style: normal;
   font-size: 3.5rem !important;
-  /* color: var(--primary-color) !important; */
 }
 .grade-title {
   background: -webkit-linear-gradient(-45deg, #3a7bd5,#36e3ef, #a78ddc, #db3db6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/*----- img -----*/
-.logoImg {
-  width: 50px !important;
-  height: 50px;
-  margin: auto;
-  border-radius: 50% !important;
-}
+/*----- 5- Images -----*/
 .hero-img {
     width: 100%;
     scale: 1.2;
     border-radius: 50%;
     z-index: -1;
   }
-/*----- card -----*/
-/* .card-body {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
+/*----- 6- Tools card -----*/
 .card {
   border: none !important;
   height: 350px !important;
@@ -105,36 +109,26 @@ h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: -webkit-linear-gradient(-45deg, #3a7bd517, #36e3ef24, #a78ddc29, #db3db61c);
 }
-
 .custom-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
-
 .card-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px 0;
 }
-
-/* .logoImg {
-  max-height: 60px;
-  object-fit: contain;
-} */
-
 .card-title {
   font-weight: 600;
   font-size: 1.2rem;
 }
-
 .visit-btn {
   border-radius: 50px;
   font-weight: 500;
   padding: 0.4rem 1.2rem;
   transition: all 0.2s ease-in-out;
 }
-
 .visit-btn:hover {
   background-color: #0d6efd;
   color: white;
@@ -143,12 +137,10 @@ h1 {
 
 
          
-/*----- Buttons -----*/         
+/*----- 7- Buttons -----*/         
 .btns-box button {         
   /*[ https://gradientbuttons.colorion.co/]*/
   background-image: linear-gradient(to right, #0575E6 0%, #021B79  51%, #0575E6  100%);
-  /* background-image: linear-gradient(to right, #3a7bd5  0%, #00d2ff  41%, #ef32d9 51%, #3a7bd5  100%); */
-  /* background-image: linear-gradient(135deg, #3a7bd5 0%,#36e3ef 35%, #a78ddc 51%, #36e3ef 100%); */
   width: 200px;
   height: 50px;
   margin: 5px;
@@ -171,6 +163,8 @@ h1 {
 .btn-outline-primary {
   --bs-btn-border-color: unset !important;
 }
+
+/*---- 8- ToolsBox ----*/
 #target {
   height: 70px;
 }
@@ -178,14 +172,14 @@ h1 {
   width: 60%;
 }
 
-/*---- footer ----*/
+/*---- 9- Footer ----*/
 .footer {
   background-color: #021B79;
   color: #fff;
 }
 
 /***********************************************/
-/*----- Responsive -----*/
+/*----- 10- Responsive -----*/
 @media screen and (max-width: 1400px) {
   h1 {
     font-size: 3em !important;
@@ -214,27 +208,18 @@ h1 {
   }
 }
 
-/* offCanvas model */
-/* @media (max-width: 767.98px) {
-  .offcanvas-md {
-    --bs-offcanvas-transition: transform 1s ease-in-out !important;
-  }
-} */
-
 @media screen and (max-width: 576px) {
   .navbar {
     height: 50px !important;
   }
-  .navbar-brand img {
-    width: 120px;
-    height: 50px;
-    margin-top: -1em;
-    margin-left: -2em;
+  .navbar .mx-5 {
+    margin-right: unset !important;
   }
-  .hero-right-section {
-    /* height: 50rem; */
-    /* padding-bottom: 2.5rem;
-    margin-bottom: 1rem !important; */
+  .logo {
+  width: 70px;
+  height: 70px;
+  top: -10px;
+  left: 0px;
   }
   .lead {
     font-size: unset !important ;
@@ -242,7 +227,6 @@ h1 {
   h1 {
     font-size: 2.5em !important;
   }
-
   .btns-box {
     width: 95vw;
   }
@@ -254,6 +238,3 @@ h1 {
   }
 }
 
-/*
-https://www.freepik.com/free-video/motion-graphic-gradient-network-connection-background_3294655#fromView=image_search_similar&page=8&position=25&uuid=1a016912-3945-4211-9f69-74390810c0ab
-*/
