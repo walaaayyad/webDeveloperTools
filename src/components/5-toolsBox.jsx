@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import { titleDesc } from "../components/sectionsTitle";
+import { titleDesc } from "../toolsHeadTitleContent";
 import { useButtonContext } from "../ButtonContext"; // Import the custom hook to access the context
 import data from "../data.json";
 import Button from 'react-bootstrap/Button';
@@ -39,8 +39,8 @@ function ToolsBox({ targetRef }) {
         {currentTitleDesc && (
           <Col xs={12} 
           className="text-center">
-            <h2>{currentTitleDesc.title}</h2>
-            <p className="lead fs-4 mx-auto section-title">{currentTitleDesc.desc}</p>
+            <h2>{currentLang === 'ar' ? currentTitleDesc.arTitle : currentTitleDesc.title}</h2>
+            <p className="lead fs-4 mx-auto section-title">{currentLang === 'ar' ? currentTitleDesc.arDesc : currentTitleDesc.desc}</p>
           </Col>
         )}
 
