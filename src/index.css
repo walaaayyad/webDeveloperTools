@@ -97,7 +97,13 @@ h1 {
     scale: 1.2;
     border-radius: 50%;
     z-index: -1;
-  }
+}
+.logoImg {
+  width: 50px !important;
+  height: 50px;
+  margin: auto;
+  border-radius: 50% !important;
+}
 /*----- 6- Tools card -----*/
 .card {
   border: none !important;
