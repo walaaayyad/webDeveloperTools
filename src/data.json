@@ -291,10 +291,10 @@
     "id": 33,
     "category": "cssTools",
     "title": "AOS Animation",
-    "webLogo": "./logoImages/websiteIcon/.png",
+    "webLogo": "./logoImages/websiteIcon/aos.png",
     "link": "https://michalsnik.github.io/aos/",
-    "desc": "",
-    "arDesc": ""
+    "desc": "Is a lightweight library that enables smooth, customizable animations as users scroll through a webpage. ",
+    "arDesc": "هي مكتبة خفيفة تتيح إضافة تأثيرات حركة سلسة وقابلة للتخصيص عند تمرير المستخدم لصفحة الويب."
   },
   {
     "id": 34,
