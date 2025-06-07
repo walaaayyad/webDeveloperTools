@@ -54,10 +54,29 @@ html, body {
   top: 0;
 }
 /*----- 3- Background blure circles -----*/
-.bg-circle {
+body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#071460, #f0f);
+        clip-path: circle(30% at right 70%);
+    }
+    body::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(57,48,205,1) 0%, rgba(126,21,152,1) 47%, rgba(149,208,221,1) 99%);
+        clip-path: circle(20% at 10% 10%);
+    }
+/* .bg-circle {
   width: 500px;
   height: 400px;
-  max-width: 100vw;
   overflow: hidden;
   border-radius: 50%;
   background-color: #3db9e35a;
@@ -73,14 +92,8 @@ html, body {
   right: -5%;
   top: -7%;
   z-index: 1;
-} 
-.bg-middle-circle {
-  background-color: #3db9e32d !important;
-  width: 700px !important;
-  left: 25%;
-  top: 50%;
-  z-index: 1;
-} 
+}  */
+
 
 /*----- 4- Hero Section -----*/
 .hero-section {
