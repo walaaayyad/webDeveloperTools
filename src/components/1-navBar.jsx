@@ -22,7 +22,7 @@ function NavBar() {
         fixed="top"
         className="bg-body-transparent"
       >
-        <Container fluid className="mx-5">
+        <Container className="">
           <Navbar.Brand href="#">
             <img
               src="./logo.png"
