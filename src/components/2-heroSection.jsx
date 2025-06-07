@@ -28,7 +28,7 @@ function HeroSection() {
 
   return (
     <>
-      <Container className="hero-section" data-aos="fade-up" data-aos-duration="2000">
+      <Container fluid className="hero-section" data-aos="fade-up" data-aos-duration="2000">
         <Row>
           <Col  xs={12} sm={12} md={7} lg={7}  
             className="d-flex justify-content-center align-items-start flex-column">

@@ -32,7 +32,7 @@ function ToolsBox({ targetRef }) {
   );
 
   return (
-    <Container className="text-dark pb-5" data-aos="fade-up" data-aos-duration="2000">
+    <Container fluid className="text-dark pb-5" data-aos="fade-up" data-aos-duration="2000">
       <div id="target" className="" ref={targetRef}></div>
       <Row className="justify-content-center">
         {/* Show title/description if category is selected */}
