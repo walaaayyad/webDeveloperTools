@@ -225,9 +225,9 @@ h1 {
   .navbar {
     height: 50px !important;
   }
-  .navbar .mx-5 {
+  /* .navbar .mx-5 {
     margin-right: unset !important;
-  }
+  } */
   .logo {
   width: 70px;
   height: 70px;

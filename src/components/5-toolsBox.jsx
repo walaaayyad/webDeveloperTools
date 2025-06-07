@@ -32,7 +32,7 @@ function ToolsBox({ targetRef }) {
   );
 
   return (
-    <Container fluid className="text-dark pb-5" data-aos="fade-up" data-aos-duration="2000">
+    <Container className="text-dark pb-5" data-aos="fade-up" data-aos-duration="2000">
       <div id="target" className="" ref={targetRef}></div>
       <Row className="justify-content-center">
         {/* Show title/description if category is selected */}
@@ -40,7 +40,7 @@ function ToolsBox({ targetRef }) {
           <Col xs={12} 
           className="text-center">
             <h2>{currentLang === 'ar' ? currentTitleDesc.arTitle : currentTitleDesc.title}</h2>
-            <p className="lead fs-4 mx-auto section-title">{currentLang === 'ar' ? currentTitleDesc.arDesc : currentTitleDesc.desc}</p>
+            <p className="lead fs-4 section-title">{currentLang === 'ar' ? currentTitleDesc.arDesc : currentTitleDesc.desc}</p>
           </Col>
         )}
 

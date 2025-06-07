@@ -2,7 +2,7 @@
 import React, { useRef,useEffect } from "react";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import NavBar from "./components/1-navBar";
 import Hero from "./components/2-heroSection";
 import ButtonsBox from "./components/3-buttonsBox";
@@ -33,13 +33,15 @@ useEffect(() => {
 
   return (
     <ButtonProvider>
-        <div className="bg-circle bg-left-circle"></div>
-        <div className="bg-circle bg-right-circle"></div>
-        <NavBar />
-        <Hero />
-        <ButtonsBox onClick={scrollToTarget}/>
-        <ToolsBox targetRef={targetRef}/>
-        <Footer/>    
+        <Container fluid className="border border-danger">
+          <div className="bg-circle bg-left-circle"></div>
+          <div className="bg-circle bg-right-circle"></div>
+          <NavBar />
+          <Hero />
+          <ButtonsBox onClick={scrollToTarget}/>
+          <ToolsBox targetRef={targetRef}/>
+          <Footer/>    
+        </Container>
     </ButtonProvider>
   );
 }
