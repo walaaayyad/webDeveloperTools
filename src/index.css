@@ -57,28 +57,27 @@ html, body {
 body::before {
         content: '';
         position: absolute;
-        top: -10%;
-        left: -10%;
-        width: 40%;
-        height: 40%;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 30%;
         border-radius: 50%;
         background-color: #3db9e33f;
         filter: blur(170px);
-        overflow: hidden;
+        clip-path: circle(100% at right 70%);
          z-index: 1;
     }
     body::after {
         content: '';
         position: absolute;
-        top: -10%;
-        right: -10%;
-        width: 40%;
-        height: 40%;
+        top: 0;
+        right: 0;
+        width: 20%;
+        height: 30%;
         border-radius: 50%;
         background-color: #3db9e33f;
         filter: blur(170px);
-        overflow: hidden;
-        /* clip-path: circle(20% at 10% 10%); */
+        clip-path: circle(100% at left 70%);
     }
 /* .bg-circle {
   width: 500px;
