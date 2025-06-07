@@ -16,6 +16,7 @@ function NavBar() {
 
   return (
     <>
+     <div dir={isArabic &&'ltr'}> {/* wrap the navbar with this condition to ignor the directions changing and keep the navbar ltr in both languages */}
       <Navbar
         expand="lg"
         fixed="top"
@@ -42,6 +43,7 @@ function NavBar() {
           </Form>
         </Container>
       </Navbar>
+      </div>
     </>
   );
 }

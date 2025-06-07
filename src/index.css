@@ -57,7 +57,7 @@ body {
   background-color: #3db9e35a;
   position: absolute;
   filter: blur(170px);
-  z-index: -1;
+  z-index: 1;
 }
 .bg-left-circle {
   left: -5%;
@@ -199,9 +199,9 @@ h1 {
     width: 200px;
     height: 300px;
   }
-   .bg-circle {
+   /* .bg-circle {
       z-index: 1;
-  }
+  } */
   .hero-img {
     scale: 1;  
   }
@@ -242,6 +242,7 @@ h1 {
   }
   .btns-box button {
     font-size: 0.8em;
+    width: 170px;
   }
   .section-title {
     width: 100%;

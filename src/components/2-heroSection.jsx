@@ -9,7 +9,22 @@ function HeroSection() {
     AOS.refresh(); // Recalculate AOS positions if dynamic content is used
   }, []);
 
-  const { t } = useTranslation(); // For translation
+  // Use react-i18next for translation 
+  const { t, i18n } = useTranslation(); //'t' for translation & 'i18n' for change directions
+  useEffect(()=> {
+    const updateDirection = (lng)=> {
+      const rtlLanguage = ['ar'];
+      document.documentElement.dir = rtlLanguage.includes(lng) ? 'rtl' : 'ltr';
+    };
+    // Initial direction setup
+    updateDirection(i18n.language); 
+    // Listen for language changes
+    i18n.on('languageChanged', updateDirection); 
+    // Cleanup listener
+    return ()=> { 
+      i18n.off('languageChanged', updateDirection)
+    }
+  }, [i18n])
 
   return (
     <>
@@ -18,10 +33,10 @@ function HeroSection() {
           <Col  xs={12} sm={12} md={7} lg={7}  
             className="d-flex justify-content-center align-items-start flex-column">
             <p className="grade-title fs-3">{t('heroSmallTitle')}</p>
-            <h1 className="text-start text-uppercase" >
+            <h1 className={!i18n.language &&'text-start text-uppercase'}>
               <Trans i18nKey='heroTitle' components={{ br: <br /> }} />
             </h1>
-          <p className="lead pe-5 mt-4">{t('heroparagraph')}</p>  
+          <p className="lead mt-4">{t('heroparagraph')}</p>  
           </Col>
 
           <Col  xs={12} sm={12} md={5} lg={5}
