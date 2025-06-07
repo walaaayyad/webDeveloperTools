@@ -56,7 +56,7 @@ function ToolsBox({ targetRef }) {
           </Col>
         ) : (
           filteredData.map((item) => (
-            <Col xs={12} sm={6} md={4} lg={4} className="text-center mt-5" key={item.id}>
+            <Col xs={10} sm={6} md={4} lg={4} className="text-center mt-5" key={item.id}>
               <Card className="custom-card shadow-sm mb-4" data-aos="zoom-in-up">
                 <div className="card-img-container">
                   <Card.Img className="logoImg" src={item.webLogo} alt={`${item.title} Logo`} />
