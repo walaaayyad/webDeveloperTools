@@ -16,34 +16,34 @@ function NavBar() {
 
   return (
     <>
-     <div dir={isArabic &&'ltr'}> {/* wrap the navbar with this condition to ignor the directions changing and keep the navbar ltr in both languages */}
-      <Navbar
-        expand="lg"
-        fixed="top"
-        className="bg-body-transparent"
-      >
-        <Container className="">
-          <Navbar.Brand href="#">
-            <img
-              src="./logo.png"
-              className="logo d-inline-block align-top"
-              alt="logo"
-            />
-            {/* <p className="lead fw-bold">WEB TOOLS</p> */}
-          </Navbar.Brand>
-          {/* Switch-button for languages */}
-          <Form>
-            <Form.Check // prettier-ignore
-              type="switch"
-              id="custom-switch"
-              label="Arabic"
-              checked={isArabic}
-              onChange={handleLanguageToggle}
-            />
-          </Form>
-        </Container>
-      </Navbar>
-      </div>
+     <Container fluid dir={isArabic &&'ltr'}> {/* wrap the navbar with this condition to ignor the directions changing and keep the navbar ltr in both languages */}
+        <Navbar
+          expand="lg"
+          fixed="top"
+          className="bg-body-transparent"
+        >
+          <Container>
+            <Navbar.Brand href="#">
+              <img
+                src="./logo.png"
+                className="logo d-inline-block align-top"
+                alt="logo"
+              />
+              {/* <p className="lead fw-bold">WEB TOOLS</p> */}
+            </Navbar.Brand>
+            {/* Switch-button for languages */}
+            <Form>
+              <Form.Check // prettier-ignore
+                type="switch"
+                id="custom-switch"
+                label="Arabic"
+                checked={isArabic}
+                onChange={handleLanguageToggle}
+              />
+            </Form>
+          </Container>
+        </Navbar>
+      </Container>
     </>
   );
 }
