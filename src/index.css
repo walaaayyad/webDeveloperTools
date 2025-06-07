@@ -57,22 +57,26 @@ html, body {
 body::before {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(#071460, #f0f);
-        clip-path: circle(30% at right 70%);
+        top: -10%;
+        left: -10%;
+        width: 40%;
+        height: 40%;
+        border-radius: 50%;
+        background-color: #3db9e33f;
+        filter: blur(170px);
+         z-index: 1;
     }
     body::after {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, rgba(57,48,205,1) 0%, rgba(126,21,152,1) 47%, rgba(149,208,221,1) 99%);
-        clip-path: circle(20% at 10% 10%);
+        top: -10%;
+        right: -10%;
+        width: 40%;
+        height: 40%;
+        border-radius: 50%;
+        background-color: #3db9e33f;
+        filter: blur(170px);
+        /* clip-path: circle(20% at 10% 10%); */
     }
 /* .bg-circle {
   width: 500px;
@@ -253,8 +257,12 @@ h1 {
   h1 {
     font-size: 2.2em !important;
   }
-  .btns-box {
+  /* .btns-box {
     width: 95vw;
+  } */
+  .padding {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
   .btns-box button {
     font-size: 0.8em;

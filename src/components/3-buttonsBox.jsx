@@ -14,9 +14,9 @@ function ButtonsBox({ onClick }) {
   const btnKeys = ['inspire','design','assets','cssTools','optimization','production'];
   return (
     <>
-      <Container className="" data-aos="fade-up" data-aos-duration="2000">
+      <Container className="padding" data-aos="fade-up" data-aos-duration="2000">
         <Row className="mt-5">
-          <Col className="col-12 my-3">
+          <Col className="col-12 my-3 d-flex">
             <div className="btns-box text-center">
               {btnKeys.map((key) => (
               <Button
