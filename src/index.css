@@ -217,9 +217,6 @@ h1 {
   .navbar {
     height: 50px !important;
   }
-  /* .navbar .mx-5 {
-    margin-right: unset !important;
-  } */
   .logo {
   width: 70px;
   height: 70px;
@@ -232,9 +229,9 @@ h1 {
   h1 {
     font-size: 2.2em !important;
   }
-  /* .btns-box {
-    width: 95vw;
-  } */
+  .bg-right-circle {
+  display: none;
+  } 
   .padding {
     padding-left: 0px !important;
     padding-right: 0px !important;
