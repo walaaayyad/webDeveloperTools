@@ -34,8 +34,8 @@ useEffect(() => {
   return (
     <ButtonProvider>
         <Container fluid>
-          {/* <div className="bg-circle bg-left-circle"></div>
-          <div className="bg-circle bg-right-circle"></div> */}
+          <div className="bg-circle bg-left-circle"></div>
+          <div className="bg-circle bg-right-circle"></div>
           <NavBar />
           <Hero />
           <ButtonsBox onClick={scrollToTarget}/>

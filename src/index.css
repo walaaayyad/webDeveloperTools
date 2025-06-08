@@ -54,7 +54,7 @@ html, body {
   top: 0;
 }
 /*----- 3- Background blure circles -----*/
-body::before {
+/* body::before {
         content: '';
         position: absolute;
         top: 0;
@@ -78,26 +78,25 @@ body::before {
         background-color: #3db9e33f;
         filter: blur(170px);
         clip-path: circle(100% at left 70%);
-    }
-/* .bg-circle {
+    } */
+.bg-circle {
   width: 500px;
   height: 400px;
   overflow: hidden;
   border-radius: 50%;
   background-color: #3db9e35a;
   position: absolute;
+  top: 0;
   filter: blur(170px);
   z-index: 1;
 }
 .bg-left-circle {
-  left: -5%;
-  top: -5%;
+  left: 0;
 } 
 .bg-right-circle {
-  right: -5%;
-  top: -7%;
-  z-index: 1;
-}  */
+  right: 0;
+  z-index: 0;
+} 
 
 
 /*----- 4- Hero Section -----*/
