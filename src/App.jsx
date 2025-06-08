@@ -62,7 +62,7 @@ const [scrollUp, setScrollUp] = useState(false);
           <ButtonsBox onClick={scrollToTarget}/>
           <ToolsBox targetRef={targetRef}/>
           <a href="#up" style={{opacity: scrollUp ? 1 : 0, transition: "1s"}}>
-          <button className='scroll-up'>up</button>
+          <button className='scroll-up pt-1'>⌃</button>
           </a>
           <Footer/>    
         </Container>
