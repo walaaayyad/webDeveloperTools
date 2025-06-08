@@ -22,7 +22,8 @@ i18n
             "production": "Production"
           },
           toolBoxInitTitle: 'Welcome, Creative Mind! 🌟',
-          toolBoxParagraph: "Let's get started! <br /> Choose a category from the buttons to explore some amazing resources."
+          toolBoxParagraph: "Let's get started! <br /> Choose a category from the buttons to explore some amazing resources.",
+          visitBtn: 'Visit →'
         },
       },
       ar: {
@@ -39,7 +40,8 @@ i18n
             "production": "لمشاركة اعمالك"
           },
           toolBoxInitTitle: '🌟 أهلًا بك، أيها المبدع',
-          toolBoxParagraph: '  لنبدأ الآن<br />اختر فئة من الأزرار لاستكشاف بعض الادوات الرائعة'
+          toolBoxParagraph: '  لنبدأ الآن<br />اختر فئة من الأزرار لاستكشاف بعض الادوات الرائعة',
+          visitBtn: ' → زيارة الموقع'
         },
       },
     },

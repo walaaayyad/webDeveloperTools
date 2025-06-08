@@ -170,10 +170,11 @@ h1 {
 
 /*---- 8- ToolsBox ----*/
 #target {
-  height: 70px;
+  height: 100px;
 }
 .section-title {
   width: 60%;
+  margin: auto;
 }
 
 /*---- 9- Footer ----*/
@@ -210,6 +211,9 @@ h1 {
   }
   .btns-box button {
     width: 230px;
+  }
+  .section-title {
+  width: 80%;
   }
 }
 

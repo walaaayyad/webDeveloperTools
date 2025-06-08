@@ -70,7 +70,7 @@ function ToolsBox({ targetRef }) {
                     target="_blank"
                     className="visit-btn"
                   >
-                    Visit &rarr;
+                    {t('visitBtn')}
                   </Button>
                 </Card.Body>
               </Card>
