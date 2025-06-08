@@ -42,7 +42,7 @@ function HeroSection() {
           <Col  xs={12} sm={12} md={5} lg={5}
                 className="d-flex justify-content-center align-items-center">
             <Image
-              src="./heroImg2.png" //https://www.freepik.com/free-vector/colorful-gradient-gamification-illustrated_21742931.htm#fromView=search&page=1&position=45&uuid=ee54b3db-3bbd-4a2a-bd9a-d2b299c4a1de&query=3d+web+
+              src="./heroImg2.png" 
               className="hero-img"
             />
           </Col>

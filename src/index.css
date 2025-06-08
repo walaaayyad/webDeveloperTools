@@ -11,11 +11,6 @@
 9- Footer
 10- Responsive
 */
-
-
-
-
-
 /*----- 1- General -----*/
 * {
   box-sizing: border-box;
@@ -198,9 +193,6 @@ h1 {
     width: 200px;
     height: 300px;
   }
-  /* .hero-img {
-    scale: 1;  
-  } */
 }
 @media screen and (max-width: 900px) {
   .hero-section {

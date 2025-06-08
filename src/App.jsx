@@ -1,4 +1,3 @@
-// App.js
 import React, { useRef,useEffect } from "react";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";

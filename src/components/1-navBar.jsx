@@ -29,7 +29,6 @@ function NavBar() {
                 className="logo d-inline-block align-top"
                 alt="logo"
               />
-              {/* <p className="lead fw-bold">WEB TOOLS</p> */}
             </Navbar.Brand>
             {/* Switch-button for languages */}
             <Form>
