@@ -271,5 +271,8 @@ h1 {
   .section-title {
     width: 100%;
   }
+  .card {
+    height: 300px !important;
+  }
 }
 
