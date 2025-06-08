@@ -29,6 +29,9 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
+.top-page-target {
+  padding-top: 100px;
+}
 /*====================
       2- Navbar
 ======================*/ 
@@ -76,7 +79,7 @@ html, body {
     4- Hero Section
 ======================*/
 .hero-section {
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }
 h1 {
   font-family: "Agdasima", sans-serif;

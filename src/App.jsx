@@ -54,7 +54,7 @@ const [scrollUp, setScrollUp] = useState(false);
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Helmet>
         <Container fluid>
-          <div id='up'></div>
+          <div id='up' className="top-page-target"></div>
           <div className="bg-circle bg-left-circle"></div>
           <div className="bg-circle bg-right-circle"></div>
           <NavBar />
