@@ -33,7 +33,7 @@ function HeroSection() {
           <Col  xs={12} sm={12} md={7} lg={7}  
             className="d-flex justify-content-center align-items-start flex-column">
             <p className="grade-title fs-3">{t('heroSmallTitle')}</p>
-            <h1 className={!i18n.language &&'text-start text-uppercase'}>
+            <h1 className={i18n.language === 'en' ? 'text-start text-uppercase' : undefined}>
               <Trans i18nKey='heroTitle' components={{ br: <br /> }} />
             </h1>
           <p className="lead mt-4">{t('heroparagraph')}</p>  

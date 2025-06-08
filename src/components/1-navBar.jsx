@@ -5,18 +5,20 @@ import { useTranslation } from 'react-i18next';
 
 function NavBar() {
   const { i18n } = useTranslation();
-  const [isArabic, setIsArabic] = useState(i18n.language === 'ar');
+  // const [isArabic, setIsArabic] = useState(i18n.language === 'ar');
+
+  const isArabic = i18n.language === 'ar';
 
   const handleLanguageToggle = () => {
-    const newLang = isArabic ? 'en' : 'ar';
-    i18n.changeLanguage(newLang);
-    setIsArabic(!isArabic);
-  };
+  const newLang = i18n.language === 'ar' ? 'en' : 'ar';
+  i18n.changeLanguage(newLang);
+};
+
 
 
   return (
     <>
-     <Container fluid dir={isArabic &&'ltr'}> {/* wrap the navbar with this condition to ignor the directions changing and keep the navbar ltr in both languages */}
+     <Container fluid dir={isArabic ? 'ltr' : undefined}> {/* wrap the navbar with this condition to ignor the directions changing and keep the navbar ltr in both languages */}
         <Navbar
           expand="lg"
           fixed="top"

@@ -11,7 +11,9 @@
 9- Footer
 10- Responsive
 */
-/*----- 1- General -----*/
+/*====================
+      1- General
+======================*/ 
 * {
   box-sizing: border-box;
 }
@@ -27,8 +29,9 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
-
-/*----- 2- Navbar -----*/
+/*====================
+      2- Navbar
+======================*/ 
 .navbar {
   height: 90px;
   background: rgb(153 207 238 / 39%);
@@ -48,7 +51,9 @@ html, body {
   position: absolute;
   top: 0;
 }
-/*----- 3- Background blure circles -----*/
+/*==========================
+3- Background blure circles
+============================*/ 
 .bg-circle {
   width: 500px;
   height: 400px;
@@ -68,8 +73,9 @@ html, body {
   z-index: 0;
 } 
 
-
-/*----- 4- Hero Section -----*/
+/*====================
+    4- Hero Section
+======================*/
 .hero-section {
   margin-top: 150px;
 }
@@ -84,7 +90,9 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/*----- 5- Images -----*/
+/*====================
+      5- Images
+======================*/
 .hero-img {
     width: 100%;
     /* scale: 1.2; */
@@ -97,7 +105,9 @@ h1 {
   margin: auto;
   border-radius: 50% !important;
 }
-/*----- 6- Tools card -----*/
+/*====================
+    6- Tools card
+======================*/
 .card {
   border: none !important;
   height: 350px !important;
@@ -133,10 +143,9 @@ h1 {
   color: white;
   border-color: #0d6efd;
 }
-
-
-         
-/*----- 7- Buttons -----*/         
+/*====================
+      7- Buttons
+======================*/                 
 .btns-box button {         
   /*[ https://gradientbuttons.colorion.co/]*/
   background-image: linear-gradient(to right, #0575E6 0%, #021B79  51%, #0575E6  100%);
@@ -162,8 +171,33 @@ h1 {
 .btn-outline-primary {
   --bs-btn-border-color: unset !important;
 }
+.scroll-up {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 3%;
+  text-align: center;
+  border: none;
+  opacity: 0.8;
+  font-size: 1.4rem;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(54, 227, 239, 1);
+  background: linear-gradient(-45deg, hsla(184, 85%, 57%, 1) 0%, #4b00e0 50%, hsla(260, 100%, 44%, 1) 70%, rgba(236, 158, 255, 0.5) 100%);
+  background: -moz-linear-gradient(-45deg, hsla(184, 85%, 57%, 1) 0%, hsla(260, 100%, 44%, 1) 50%, hsla(260, 100%, 44%, 1) 70%, rgba(236, 158, 255, 0.5) 100%);
+  background: -webkit-linear-gradient(-45deg, hsla(184, 85%, 57%, 1) 0%, hsla(260, 100%, 44%, 1) 50%, hsla(260, 100%, 44%, 1) 70%, rgba(236, 158, 255, 0.5) 100%);
+  z-index: 99;
+}
+.scroll-up:hover {
+  border-color: rgb(95, 37, 166);
+  background-color: rgba(91, 39, 137, 0.46);
+}
 
-/*---- 8- ToolsBox ----*/
+/*====================
+      8- ToolsBox
+======================*/ 
 #target {
   height: 100px;
 }
@@ -171,15 +205,18 @@ h1 {
   width: 60%;
   margin: auto;
 }
-
-/*---- 9- Footer ----*/
+/*====================
+      9- Footer
+======================*/ 
 .footer {
   background-color: #021B79;
   color: #fff;
 }
 
 /***********************************************/
-/*----- 10- Responsive -----*/
+/*==============================================
+                  10- Responsive
+================================================*/
 @media screen and (max-width: 1400px) {
   h1 {
     font-size: 3em !important;
