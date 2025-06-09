@@ -78,9 +78,6 @@ html, body {
 /*====================
     4- Hero Section
 ======================*/
-.hero-section {
-  /* margin-top: 150px; */
-}
 h1 {
   font-family: "Agdasima", sans-serif;
   font-weight: 700 !important;
@@ -186,16 +183,17 @@ h1 {
   font-size: 1.4rem;
   color: #fff;
   cursor: pointer;
-  background: rgba(54, 227, 239, 1);
-  background: linear-gradient(-45deg, hsla(184, 85%, 57%, 1) 0%, #4b00e0 50%, hsla(260, 100%, 44%, 1) 70%, rgba(236, 158, 255, 0.5) 100%);
-  background: -moz-linear-gradient(-45deg, hsla(184, 85%, 57%, 1) 0%, hsla(260, 100%, 44%, 1) 50%, hsla(260, 100%, 44%, 1) 70%, rgba(236, 158, 255, 0.5) 100%);
-  background: -webkit-linear-gradient(-45deg, hsla(184, 85%, 57%, 1) 0%, hsla(260, 100%, 44%, 1) 50%, hsla(260, 100%, 44%, 1) 70%, rgba(236, 158, 255, 0.5) 100%);
+  border: 1px solid #ffffff92;
+  background: #0575E6;
+  background: linear-gradient(135deg, #0575E6 0%, #021B79  51%, #0575E6  100%);
+  background: -moz-linear-gradient(135deg, #0575E6 0%, #021B79  51%, #0575E6  100%);
+  background: -webkit-linear-gradient(135deg, #0575E6 0%, #021B79  51%, #0575E6  100%);
   z-index: 99;
 }
-.scroll-up:hover {
+/* .scroll-up:hover {
   border-color: rgb(95, 37, 166);
   background-color: rgba(91, 39, 137, 0.46);
-}
+} */
 
 /*====================
       8- ToolsBox
