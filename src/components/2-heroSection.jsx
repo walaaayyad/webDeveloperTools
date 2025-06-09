@@ -54,4 +54,3 @@ function HeroSection() {
 
 export default HeroSection;
 
-//earth img [https://www.pinterest.com/pin/70931762876102460/]
