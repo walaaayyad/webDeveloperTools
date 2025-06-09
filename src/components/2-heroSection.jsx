@@ -44,6 +44,7 @@ function HeroSection() {
             <Image
               src="./heroImg2.jpg" 
               className="hero-img"
+              alt="hero image"
             />
           </Col>
         </Row>
