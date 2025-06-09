@@ -38,6 +38,9 @@ A curated collection of **free tools and resources** to help **web developers** 
 Language can be toggled dynamically using `react-i18next`.
 
 ---
+## 📸 Preview
+![Web Developer Tools Screenshot](public/pageScreen.png)
+
 
 ## 📁 Getting Started
 
@@ -57,8 +60,6 @@ npm install
 npm run dev
 ```
 ---
-## 📸 Preview
-![Web Developer Tools Screenshot](public/pageScreen.png)
 
 ## 👩‍💻 Author
 Walaa Ayyad
