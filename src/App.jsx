@@ -52,7 +52,22 @@ const [scrollUp, setScrollUp] = useState(false);
           <meta name="keywords" content="web development tools, free developer tools, icons, fonts, inspiration, design resources, web design" />
           <meta name="author" content="Walaa Ayyad" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          {/* Open Graph / Facebook */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://walaaayyad.github.io/webDeveloperTools/" /> 
+          <meta property="og:title" content="Free Tools for Web Developers" />
+          <meta property="og:description" content="Curated free tools and resources for web developers including design, CSS, optimization, and inspiration." />
+          <meta property="og:image" content="https://walaaayyad.github.io/webDeveloperTools/heroImg2.png" /> 
+
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:url" content="https://walaaayyad.github.io/webDeveloperTools/" /> 
+          <meta name="twitter:title" content="Free Tools for Web Developers" />
+          <meta name="twitter:description" content="Curated free tools and resources for web developers including design, CSS, optimization, and inspiration." />
+          <meta name="twitter:image" content="https://walaaayyad.github.io/webDeveloperTools/heroImg2.png" /> 
         </Helmet>
+
         <Container fluid>
           <div id='up' className="top-page-target"></div>
           <div className="bg-circle bg-left-circle"></div>
