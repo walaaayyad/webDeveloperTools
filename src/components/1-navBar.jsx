@@ -26,12 +26,12 @@ function NavBar() {
         >
           <Container>
             <Navbar.Brand href="#">
-              {/* <img
+              <img
                 src="./logoMin.png"
                 className="logo d-inline-block align-top"
                 alt="logo"
-              /> */}
-              Web Tools
+              />
+              {/* Web Tools */}
             </Navbar.Brand>
             {/* Switch-button for languages */}
             <Form>
