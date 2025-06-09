@@ -58,7 +58,7 @@ npm run dev
 ```
 ---
 ## 📸 Preview
-![Web Developer Tools Screenshot]()
+![Web Developer Tools Screenshot](public/pageScreen.png)
 
 ## 👩‍💻 Author
 Walaa Ayyad
