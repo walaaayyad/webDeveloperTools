@@ -42,7 +42,7 @@ function HeroSection() {
           <Col  xs={12} sm={12} md={5} lg={5}
                 className="d-flex justify-content-center align-items-center">
             <Image
-              src="./heroImg2.png" 
+              src="./heroImg2.jpg" 
               className="hero-img"
             />
           </Col>
