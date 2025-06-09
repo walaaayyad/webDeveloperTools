@@ -55,3 +55,14 @@ npm install
 
 # Start development server
 npm run dev
+```
+---
+## 📸 Preview
+![Web Developer Tools Screenshot]()
+
+## 👩‍💻 Author
+Walaa Ayyad
+🔗 https://github.com/walaaayyad
+
+## 📄 License
+This project is licensed under the MIT License.
